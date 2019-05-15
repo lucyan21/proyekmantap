@@ -1,11 +1,16 @@
 package com.netwave.indopediaid.activity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
+import android.view.View;
 import android.widget.TextView;
 
 import com.netwave.indopediaid.R;
+import com.netwave.indopediaid.payment.PaketData;
+import com.netwave.indopediaid.payment.Pulsa;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
 
     //HomeModel model = null;
     String id;
+
+    CardView cv_pulsa, cv_kategori, cv_diskon, cv_halal, cv_paketdata;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +45,53 @@ public class MainActivity extends AppCompatActivity {
         tv_fashion = findViewById(R.id.tv_fashion);
         tv_hand = findViewById(R.id.tv_handicraft);
         tv_kesehatan = findViewById(R.id.tv_kesehatan);
+
+        cv_pulsa = findViewById(R.id.cv_pulsa);
+        cv_kategori = findViewById(R.id.cv_kategori);
+        cv_diskon = findViewById(R.id.cv_diskon);
+        cv_halal = findViewById(R.id.cv_halal);
+        cv_paketdata = findViewById(R.id.cv_paketdata);
+
+
+        cv_pulsa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, Pulsa.class);
+                startActivity(i);
+            }
+        });
+
+        cv_paketdata.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, PaketData.class);
+                startActivity(i);
+            }
+        });
+
+        cv_kategori.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, ProdukList.class);
+                startActivity(i);
+            }
+        });
+
+        cv_diskon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, ProdukList.class);
+                startActivity(i);
+            }
+        });
+
+        cv_halal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, ProdukList.class);
+                startActivity(i);
+            }
+        });
 
     }
 }

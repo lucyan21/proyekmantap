@@ -1,3 +1,423 @@
 <resources>
-    <string name="app_name">IndopediaId</string>
+    <string name="app_name">Indopedia.Id</string>
+    <string name="action_settings"> </string>
+    <string name="action_search">Search</string>
+
+    <string name="openDrawer">Drawer dibuka</string>
+    <string name="closeDrawer">Drawer ditutup</string>
+    <string name="navigation_view_item_1">Beranda</string>
+    <string name="navigation_view_item_2">Profil</string>
+    <string name="navigation_view_item_3">Kategori</string>
+
+    <string name="navigasi_kategori_2">Sub Item Navigasi</string>
+    <string name="tolong">Bantuan</string>
+    <string name="blogs">Blogs</string>
+    <string name="navigation_view_item_5">Info Kami</string>
+    <string name="join">Kerja Sama</string>
+    <string name="cs">Customer Service</string>
+    <string name="navigation_view_item_4">Settings</string>
+
+    <string name="user_id">user_id</string>
+    <string name="nm_user">Nama User</string>
+    <string name="tentang">Tentang Kami</string>
+    <string name="beli"><b>Beli Sekarang</b></string>
+    <string name="add_chart"><b>Tambah Ke Keranjang</b></string>
+    <string name="wish"><b>Whistlist</b></string>
+    <string name="checkout">CheckOut</string>
+    <string name="konten_dsc">Ini Deskripsi</string>
+    <string name="panduan_belanja">Panduan Belanja</string>
+    <string name="lacak_pesanan">Panduan Lacak Pesanan</string>
+    <string name="pembayaran">Panduan Pembayaran</string>
+    <string name="pengiriman">Panduan Pengiriman</string>
+    <string name="stok">Stok\nTersedia</string>
+    <string name="nm_barang">Tas Ransel AVTECH QARANI -\nKANAKA GEAR</string>
+    <string name="total">Total Harga Barang</string>
+    <string name="kirim">Pengiriman</string>
+    <string name="desc_rat">Rating &#038; Ulasan dari TAS RANSEL AVTECH QARANI - KANAKAGEAR</string>
+    <string name="urutan">Atur Berdasarkan</string>
+    <string name="total_bayar">Total Pembayaran</string>
+    <string name="btn_bayar">Pembayaran</string>
+    <string name="alamat_pengirim"><u>Alamat Pengirim</u></string>
+    <string name="jasa_kirim"><u>Jasa Pengiriman</u></string>
+    <string name="info_bayar"><u>Informasi Pembayaran</u></string>
+
+
+    <string name="page_handicraft">Handicraft</string>
+    <string name="page_fashion">Fashion</string>
+    <string name="page_kesehatan">Helathcare</string>
+    <string name="page_makanan">Makanan &#038; Minuman</string>
+
+
+    <string name="page_pulsa">Pulsa</string>
+    <string name="page_data">Paket Data</string>
+    <string name="page_pln">Tagihan PLN</string>
+
+    <string-array name="urutan">
+        <item>Tanggal Dibuat</item>
+        <item>Nama Penulis</item>
+        <item>Rating Tertinggi</item>
+    </string-array>
+
+    <string-array name="finpay_bi">
+        <item>-- Bank --</item>
+        <item>BJB SYARIAH</item>
+        <item>BPRKS</item>
+        <item>BRI</item>
+        <item>BRI AGRO</item>
+        <item>BRI SYARIAH</item>
+        <item>MEGA</item>
+        <item>MEGA SYARIAH</item>
+        <item>NTB</item>
+        <item>NTT</item>
+        <item>PANIN SYARIAH</item>
+        <item>PAPUA</item>
+        <item>PERMATA</item>
+        <item>SULSELBAR</item>
+        <item>SULUT</item>
+        <item>SWADESI</item>
+        <item>SYARIAH MANDIRI</item>
+        <item>CITIBANK</item>
+        <item>POSINDO</item>
+        <item>STANDARD CHARTRED BANK</item>
+        <item>BTN</item>
+        <item>BTPN</item>
+        <item>DANAMON</item>
+        <item>DIPO</item>
+        <item>EKONOMI RAHARJA</item>
+        <item>HSBC</item>
+        <item>KALSEL</item>
+        <item>KALTIM</item>
+        <item>MUAMALAT</item>
+        <item>JTRUST</item>
+        <item>NUSANTARA PARAHYANGAN</item>
+        <item>QNB INDONESIA</item>
+        <item>BTPN SYARIAH</item>
+        <item>MNC BANK</item>
+        <item>RABOBANK</item>
+        <item>ARTHA GRAHA</item>
+        <item>MAYBANK</item>
+        <item>BPD ACEH</item>
+        <item>BUMI ARTHA</item>
+        <item>CIMB NIAGA</item>
+        <item>MANDIRI</item>
+        <item>MAYAPADA</item>
+        <item>MESTIKA</item>
+        <item>METRO EXPRESS</item>
+        <item>NAGARI</item>
+        <item>OCBC NISP</item>
+        <item>PANIN</item>
+        <item>PRIMAMASTER</item>
+        <item>SUMSEL BABEL</item>
+        <item>SUMUT</item>
+        <item>UOB INDONESIA</item>
+        <item>WOORI SAUDARA</item>
+        <item>ANTARDAERAH</item>
+        <item>ARTOS</item>
+        <item>BCA</item>
+        <item>BJB</item>
+        <item>BNI</item>
+        <item>BNI SYARIAH</item>
+        <item>BPD BALI</item>
+        <item>BUKOPIN</item>
+        <item>DIY</item>
+        <item>DKI</item>
+        <item>GANESHA</item>
+        <item>INA PERDANA</item>
+        <item>JATENG</item>
+        <item>JATIM</item>
+        <item>MASPION</item>
+        <item>MAYORA</item>
+        <item>NOBU OF TOKYO</item>
+        <item>SINAR HARAPAN BALI</item>
+        <item>VICTORIA YUDHA BAKTI </item>
+    </string-array>
+
+    <string-array name="channel_bi">
+        <item>-- Channel --</item>
+        <item>ATM</item>
+        <item>Internet Banking</item>
+        <item>Mobile Banking</item>
+    </string-array>
+
+    <string-array name="outlet_id">
+        <item>-- Outlet --</item>
+        <item>Alfamart</item>
+        <item>Indomaret</item>
+        <item>POS</item>
+        <item>Pegadaian</item>
+        <item>Delima Point</item>
+    </string-array>
+
+    <string-array name="alamat_pedagang">
+        <item>Rumah</item>
+        <item>Kantor</item>
+        <item>papua</item>
+        <item>tambah alamat &#8230;</item>
+    </string-array>
+
+    <string-array name="sp_provinsi">
+        <item>KALIMANTAN BARAT</item>
+        <item>KALIMANTAN TIMUR</item>
+        <item>KALIMANTAN SELATAN</item>
+        <item>KALIMANTAN UTARA</item>
+    </string-array>
+
+    <string-array name="sp_kota">
+        <item>SEKADAU</item>
+        <item>KAPUAS HULU</item>
+    </string-array>
+
+    <string-array name="sp_kecamatan">
+        <item>BELITANG HULU</item>
+        <item>BELITANG HILIR</item>
+    </string-array>
+
+    <string-array name="sp_kelurahan">
+        <item>SUNGAI ANTU HULU, 79587</item>
+        <item>SUNGAI TAPAH, 79587</item>
+    </string-array>
+
+    <string name="desc_newsletter">Dengan berlangganan Newsletter kami maka anda akan mendapatkan informasi terbaru perihal promosi dan produk-produk lainya.
+        \nSilahkan masukan alamat email dan kategori ketertarikan anda sehingga kami dapat dengan tepat menginformasikan promosi dan produk.
+        \n\nUntuk pertanyaan lainnya, jangan ragu untuk memeriksa Pusat Bantuan kami.
+    </string>
+
+    <string name="alamat_adm"><b>Admin Indopedia</b>
+        \nKalimantan
+        \nSungai Antu Hulu, Belitang Hulu
+        \nSekadau, Kalimantan Barat
+        \08123424234
+    </string>
+
+    <string name="desc_about_us">Sebuah market place online yang dimiliki oleh <b>PT. Netwave Multi Media di Jakarta</b>. Situs ini menyediakan sarana jual beli dari konsumen ke konsumen, jangkauan pelayanannya adalah seluruh Indonesia bahkan global, semua bisa membuka market place (toko) di indopedia untuk transaksi satuan maupun partai besar.
+        \n\nIndopedia merupakan situs belanja online yang mudah dan aman, mudah dikarenakan menggunakan applikasi teknologi yang user friendly sehingga transaksi online mudah dilakukan dan aman dikarenakan setiap transaksi yang barang yang tidak diterima oleh pembeli akan di jamin dikembalikan uangnya 100%.
+        \n\n<b>Visi Indopedia :</b>
+        \n\nMenjadi situs online no.1 yang didedikasikan untuk produk - produk Indonesia.
+        \n\n<b>Misi Indopedia :</b>
+        \n\nMemberdayakan Industri dan produsen dalam negeri Indonesia.
+        \nMemberdayan UMKM seluruh Indonesia.
+        \n\n<b>Hubungi Kami</b>
+        \n\nTelepon :
+        \nEmail :
+        \nWA :
+        \nAlamat :
+        \nJam Kerja :
+    </string>
+
+    <string name="desc_panduan_belanja"><b>1. Umum</b>\n\nSebelum menggunakan situs Indopedia dipersilahkan membaca, memahami dan menyetujui seluruh syarat dan ketentuan ini agar tidak terdapat kesalah pahaman dalam penggunaan applikasi dan tentang konten yang akan dimasukkan didalam situs ini. Bagi pengguna yang telah mengakses situs ini, kami asumsikan telah membaca, memahami dan menyetujui seluruh ketentuan penggunaan situs Indopedia. Syarat dan Ketentuan sewaktu-waktu dapat di rubah tanpa pemberitahuan terlebih dahulu dan berlaku segera setelah kami cantumkan dalam situs www.indopedia.id. Jika pengguna merasa keberatan atau tidak dapat memenuhi ketentuan dalam perjanjian ini maka kami persilahkan untuk tidak menggunakan situs ini.\n
+        \n<b>2. Informasi Tentang <i>Indopedia</i></b>\n\na. Indopedia.id adalah suatu sarana untuk menyelenggarakan bisnis secara online, yang menyediakan berbagai sarana dan fitur lanyanannya guna menjamin keaman dan kenyamanan penguna.
+        \n\nb. Indopedia.id adalah sebagai penyedia market place yakni sebagai perantara penjual (merchant) dan pembeli, Indopedia menyediakan sarana sistem pembayaran dan pemantauan (monitoring) terhadap delivery.
+        \n\nc. Adanya biaya ekstra, seperti pajak dan biaya lainnya, untuk transaksi yang dilakukan di Indopedia.id bukan merupakan kewenangan Indopedia.id melainkan diurus oleh penjual dan pembeli.\n
+        \n<b>3. Penggunaan Situs</b>\n\na. Situs Indopedia hanya diakses untuk keperluan dan kepentingan berbelanja dan sesuai dari layanan situs ini.
+        \n\nb. Pengguna situs minimum 18 tahun, sudah pernah menikah atau secara hukum telah diakui sebagai orang dewasa dan terlepas dari hukum perlindungan anak.
+        \n\nc. Pengguna wajib mengisi data pribadi secara lengkap dan jujur di halaman akun (profil pengguna).
+        \n\nd. Pengguna dilarang mencantumkan alamat, nomor kontak, e-mail, situs, forum dan media sosial di Indopedia.id termasuk foto profil, foto header market place, nama market place dan deskripsi market place.Pengguna bertanggung jawab atas keamanan dari akun termasuk penggunaan e-mail dan password.
+        \n\ne. Pengguna wajib mengisi data bank pribadi (bank account) untuk kepentingan bertransaksi di Indopedia.
+        \n\nf. Selama berada dalam platform Indopedia.id, Pengguna dilarang keras menyampaikan setiap jenis konten apapun yang menyesatkan, memfitnah, atau mencemarkan nama baik, mengandung atau bersinggungan dengan unsur SARA, diskriminasi, dan/atau menyudutkan pihak lain.
+        \n\ng. Pengguna tidak diperkenankan untuk memuat dan menerbitkan konten : melanggar hak cipta, merek dagang, paten, merek layanan, rahasia dagang, atau hak kepemilikan lainnya.
+        \n\nh. Pengguna dilarang mereproduksi, mendistribusikan, memajang, menjual, menyewakan, mengirimkan, membuat karya turunan dari, menterjemahkan, merekayasa ulang, memodifikasi, membongkar, mengurai atau mengekploitasi situs Indopedia.id.
+        \n\ni. Pengguna dilarang memuat dan menerbitkan konten yang berisi ancaman, cabul, tidak senonoh, pornografi, atau yang bisa menimbulkan segala kewajiban hukum perdata atau pidana atau hukum internasional.
+        \n\nj. Pengguna dilarang memuat dan menerbitkan konten yang berisi bugs, worm, virus, pintu perangkap, trojan horse atau kode, email spam dan property berbahaya lainnya.
+        \n\nk. Pengguna bertanggung jawab atas segala risiko yang timbul di kemudian hari atas informasi yang diberikannya ke dalam Indopedia, termasuk namun tidak terbatas pada hal-hal yang berkaitan dengan hak cipta, merek, desain industri, desain tata letak industri dan hak paten atas suatu produk.
+        \n\nl. Pengguna diwajibkan menghargai hak-hak Pengguna lainnya dengan tidak memberikan informasi pribadi ke pihak lain tanpa izin pihak yang bersangkutan.
+        \n\nm. Pengguna dilarang mengalihkan dan memindahtangankan akun miliknya ke pengguna lain tanpa seijin dari Indopedia.id.
+        \n\nn. Bilamana pengguna melanggar aturan dalam perjanjian ini, administrator Indopedia.id berhak menyesuaikan dan/atau menghapus informasi barang dan menonaktifkan akun pengguna.
+        \n\no. Hati-hati penipuan yang mengatasnamakan Indopedia.id, informasi dan pengaduan harap menghubungi kami di cs@indopedia.id.\n
+        \n<b>4. Penjual/Merchant</b>\n\na. Barang yang termasuk dalam daftar “Barang Terlarang” tidak diperbolehkan dijual di Indopedia.id.
+        \n\nb. Penjual (Merchant) harus bertanggung jawab penuh atas segala resiko yang timbul dikemudian hari terkait dengan informasi yang dibuatnya, termasuk, namun tidak terbatas pada hal-hal yang berkaitan dengan hak cipta, merek, desain industri, desain tata letak sirkuit, hak paten dan /atau lain yang telah ditetapkan atas suatu produk menurut hukum yang berlaku di Indonesia.
+        \n\nc. Merchant wajib meletakkan barang dagangannya sesuai dengan Kategori dan sub-kategori yang telah ditetapkan oleh Indopedia.id.
+        \n\nd. Merchant wajib mengisi nama atau judul barang dengan jelas, singkat dan padat.
+        \n\ne. Merchant wajib menampilkan gambar barang yang sesuai dengan deskripsi barang yang dijual dan tidak boleh mencantumkan logo atau alamat situs jual-beli lain pada gambar. Foto atau gambar barang agar dibuat 3 posisi (pandangan depan, samping, belakang) dengan resolusi minimal 300px.
+        \n\nf. Merchant wajib mengisi harga yang sebenarnya.
+        \n\ng. Merchant dilarang menjual barang yang sama dengan yang telah berada di tokonya/market place miliknya (multiple posting).
+        \n\nh. Merchant hanya diperbolehkan mencantumkan alamat (e-mail, situs, forum, akun media sosial), nomor kontak telepon/HP, ID/PIN/User name media sosial dan nomor rekening bank, pada kolom yang disediakan.\n
+        \n<b>5. Transaksi</b>\n\na. Harga yang tertera di market place belum termasuk harga ongkos kirim, tarif armada ataupun kurir.
+        \n\nb. Demi keamanan dan kenyamanan transaksi jual-beli di Indopedia.id diwajibkan menggunakan sistem pembayaran yang telah disediakan oleh Indopedia.id. (lihat panduan cara pembayaran).
+        \n\nc. Pembeli wajib membayar kepada rekening Indopdia.di, sesuai dengan nominal belanja dari transaksi yang dilakukan dalam waktu 1x24 Jam dengan asumsi pembeli telah mempelajari informasi barang yang telah dipesannya. Bilamana dalam waktu 1x24 jam pembeli tidak melakukan pembayaran maka pesanan akan dibatalkan secara otomatis.
+        \n\nd. Setiap pembayaran yang dilakukan melalui sistem pembayaran di Indopedia.id dikenakan biaya kepada pembeli sesuai dengan jenis pembayaran yang dilakukan (transfer, kartu kredit, modern market, debet), lebih jelasnya lihat : Petunjuk Pemabayaran di Indopedia.
+        \n\ne. Pembeli tidak dapat membatalkan transaksi setelah dilakukan pelunasan pembayaran.
+        \n\nf. Merchant wajib mengirimkan barang dan mendaftarkan nomor resi pengiriman yang benar dan asli setelah status transaksi Paid (Dibayar), satu nomor resi hanya untuk satu nomor transaksi di Indopedia.id.
+        \n\ng. Jika merchant tidak melakukan pengiriman 2x24 jam (jam kerja) sejak pelunasan pembayaran dilakukan maka merchant diasumikan menolak pesanan, dengan demikian merchant tersebut akan ditandai oleh sistem sebagai reputasi negatif kaena menolak pesanan, selanjutnya seluruh uang pembayaran pesanan akan dikembalikan (refund) kepada pembeli.
+        \n\nh. Berdasarkan resi yang diterbitkan oleh merchant adalah sebagai dasar pengecekan tracking yang dilakukan oleh sistem Indopedia.id secara otomatis, jika nomor resi tersebut tidak valid maka merchant harus memperbaikinya /merubahnya dalam waktu 1x24 jam, dan jika merchant memasukkan nomor resi yang salah lebih dari satu kali maka Indopedia akan mengembalikan seluruh dana transaksi kepada pembeli selanjutnya sistem akan memberikan feedback negatif kepada merchant tersebut.
+        \n\ni. Jika pembeli tidak memberikan konfirmasi penerimaan barang dalam waktu 2x24 Jam sejak barang diterimayang ditunjukkan oleh system tracking jasa logistik (pengiriman), Indopedia akan mentransfer dana langsung ke rekening merchant tanpa memberikan konfirmasi terlebih dahulu ke pembeli.
+        \n\nj. Pembeli dapat memperbaharui feedback maksimal 3x24 jam setelah transaksi dinyatakan selesai oleh sistem Indopedia.
+        \n\nk. Retur (pengembalian barang) hanya diperbolehkan jika kesalahan dilakukan oleh merchant sehingga barang yang diterima tidak sesuai dengan deskripsi.
+        \n\nl. Retur tidak dapat dilakukan setelah transaksi selesai menurut system tracking atau setelah pembeli melakukan konfirmasi barang diterima dan tidak memilih retur.
+        \n\nm. Langkah-langkah melakukan retur dapat dibaca pada Pengembalian Barang.
+        \n\nn. Indopedia.id akan menahan dana hingga adanya kesepakatan antara pembeli dan merchant, apakah akan dilakukan pengembalian barang ke merchant atau tidak.
+        \n\no. Indopedia.id akan mengembalikan dana transaksi ke pembeli jika dalam waktu 5x24 Jam Merchant tidak merespon pesan permintaan retur dari Pembeli di halaman detail transaksi. Selanjutnya Pembeli wajib mengirimkan barang tersebut ke Kantor Indopedia.
+        \n\np. Bilamana dalam waktu 30 hari Merchant tidak melakukan pengaduan kepemilikan barang yang berada di kantor Indopedia.id, maka Indopedia tidak bertanggung jawab terhadap keberadaan barang tersebut.
+        \n\nq. Indopedia, atas kebijakannya sendiri, untuk melakukan perlindungan terhadap segala resiko, dapat melakukan penahanan dana transaksi, bilamana Indopedia menyimpulkan bahwa tindaka para pengguna (baik Merchant ataupun Pembeli) terindikasi melakukan kecurangan-kecurangan atau penyalahgunaan dalam bertransaksi dan atau penlanggaran terhadap aturan penggunaan Indopedia dan jika akun pengguna diduga atau terindikasi telah diakses oleh pihak lain.\n
+        \n<b>6. Harga</b>\n\nJika dalam kondisi tertentu terjadi kesalahan harga ataupun informasi mengenai suatu produk tertentu yang disebabkan oleh kesalahan pengetikan (Typo) yang berasal dari Merchant, Indopedia.id berhak menolak ataupun membatalkan pesanan yang menggunakan harga yang salah tersebut termasuk pesanan yang sudah dibayarkan, Indopedia akan mengembalikan uang pembayaran transaksi kepada Pemesan (Pembeli).\n
+        \n<b>7. Deskripsi Produk</b>\n\nIndopedia.id selalu berusaha memberdayakan Merchant yang berjualan agar memberikan deskripsi produk se-akurat mungkin, namun Indopedia.id tidak dapat menjamin 100% bahwa semua deskripsi atau konten yang terdapat didalam website Indopedia.id adalah akurat, lengkap, terbaru, atau bebas error. Jika produk yang ditawarkan dalam Indpedia.id tidak sesuai dengan yang tertera dalam deskripsi produk maka pembeli melakukan retur sesuai dengan prosedur berlaku.\n
+        \n<u>8. Kebijakan Privasi</u>\n\nKebijakan Privasi dimaksudkan adalah sebagai acuan mengatur dan melindungi penggunaan data dan informasi penting para pengguna situs www.indopedia.id , pada saat mendaftar dan mengakses maka para pengguna situs indopedia.id diharuskan mengisi seperti alamat email, no telepon, foto/gambar dan lain-lain yang merupakan data yang sangat penting untuk dilindungi, kebijakan privasi dimaksud adalah :
+        \n\na. Indopedia.id melindungi seluruh informasi yang diberikan pengguna pada saat mendaftar, mengakses situs dan menggunakan seluruh layanan yang tersedia di situs indopedia.id.
+        \n\nb. Indopedia.id melindungi segala hak pribadi yang muncul atas informasi mengenai suatu produk yang di unggah dan ditampilkan oleh pengguna indopedia.id, berupa foto, username, logo dan lain-lain.
+        \n\nc. Namun Indopedia.id tidak bertanggung jawab bilamana antara pengguna situs melakukan pertukaran data diantara mereka.
+        \n\nd. Indopedia.id berhak menggunakan data dan informasi para pengguna situs guna memperbaiki performansi layanan dan mutu dari indopedia.id.
+        \n\ne. Indopedia.id hanya dapat memberikan data dan informasi yang dimiliki oleh pengguna situs bilamana di wajibkan dan atau diminta oleh institusi yang berwenang sesuai dengan ketentuan hukum yang berlaku di Republik Indonesia, yakni perintah resmi dari pengadilan dan atau perintah resmi dari instansi/apparat yang bersangkutan.
+        \n\nf. Pengguna dapat berlangganan informasi promo terbaru dan penawarran ekslusif dari situs Indopedia, serta dapat juga berhenti berlangganan (unsubscribe) jika tidak ingin menerima informasi tersebut lebih lanjut.\n
+        \n<b>9. Komentar dan Review</b>\n\nSeluruh komentar dan review yang berasal dari pengguna situs (pembeli) yang disampaikan dengan bahasa yang santun (tanpa melecehkan orang/pihak lain termasuk indopedia.id), yang dituliskan, dan gambar, foto, image yang di unggah di situs indopedia.id akan di kategorikan dan diperlakukan sebagai konten yang bersifat tidak rahasia.\n
+        \n<b>10. Link</b>\n\nSitus indopedia.id dari berisi yang bersumber dari link internet ke situs lainnya, yang dimiliki dan dioperasikan oleh pihak ketiga, indopedia.id tidak bertanggung jawab terhadap pengoperasian maupun konten dari yang terdapat dalam situs tersebut.\n
+        \n<b>11. Hak Milik Intelektual</b>\n\nPT. Netwave Multi Media adalah pemilik tunggal dari situs www.indopedia.id atau pemegang sah semua hak atas situs dan konten yang ada didalam situs. Adapun seluruh hak dimaksud dilindungi oleh Undang-undang hak cipta dan undang-undang lainnya yang melindungi hak milik intelektual, berlaku di Indonesia dan di seluruh dunia, yang meliputi :\n
+        \na. Seluruh Kepemilikan Perangkat Lunak yang dirangkai menjadi situs www.indopedia.id .
+        \nNama dan Logo situs indopedia.id merupakan merek dagang terdaftar di berbagai wilayah hukum dan dilindungi oleh Undang-undang tentang hak cipta, undang-undang merek dagang atau hak milik intelektual lainnya. Dilarang keras menggunakan, mengubah, atau memasang merekmerek dan logo indopedia.id untuk kepentingan pribadi dan atau mendiskreditkan www.indopedia.id.\n
+        \n<b>12. Barang Terlarang</b>\n\nSesuai yang dipersyaratkan oleh Peraturan Perundang-undangan yang berlaku, guna mencegah terjadinya perdagangan perdaganan barang-barang yang melanggar ketentuan hokum dan /atau hak pribadi pihak ketiga, maka yang berikut tidak boleh di perdagangkan di Indopedia.id :\n
+        \n\na. Narkoba, obat-obatan yang tidak terdaftar di Kementerian Kesehahan/Dinkes/BPOM.
+        \n\nb. Senjata api beserta kelengkapannya, replica senjata api, air soft gun, air gun, peluru dan sejenis peluru, senjata tajam serta jenis senjata lainnya.
+        \n\nc. Dokumen Pemerintah serta surat perjalanan dinas
+        \n\nd. Bagian atau organ tubuh manusia.
+        \n\ne. Segalabentuk tulisan yang dapat berpengarush buruk terhadap Indopedia.id
+        \n\nf. Barang-barang yang melecehkan pihak/ras tertentu atau yang dapat menyinggung perasaan orang lain.
+        \n\ng. Barang Curian.
+        \n\nh. Barang Mistis.
+        \n\ni. Segala alat yang dapat membuka kunci beserta aksesori penunjang tidakan perampokan dan/atau pencurian.
+        \n\nj. Barang-barang yang mudah meledak, mudah terbakar sendiri.
+        \n\nk. Pornografi.
+        \n\nl. Barang cetakan maupun rekaman audio/video yang isinya dapat mengganggu keamanan, ketertiban, stabilitas nasional.
+        \n\nm. Segala jenis binatang dan hewan peliharaan.
+        \n\nn. Barang-barang lainnya yang bertentangan dengan hukum di Indonesia.\n
+        \n<b>13. Sanksi</b>\n\nPara Merchant (Penjual) di Indopedia.id yang melanggar peraturan di Indopedia.id akan dikenai sanksi berupa namun tidak terbatas pada:
+        \n\na. Apabila tidak melakukan pengiriman barang pesanan dalam batas waktu pengiriman sejak pelunasan pembayaran (2x24 Jam Kerja) maka merchant mendapat 1 feedback negatif.
+        \n\nb. Apabila menolak pesanan sebanyak 5 kali, Mercahant mendapat 1 feedback Negatif.
+        \n\nc. Apabila sesudah memposes pesanan namun barang tidak dikirimkan sampai batas waktu pengiriman 2x24 Jam, Merchant akan mendapatkan 3 feedback Negatif.
+        \n\nd. Akun dibekukan
+        \n\ne. Akun di nonaktifkan.
+        \n\nf. Melaporkan kepada pihak yang berwajib (Kepolisian, dll.)\n
+    </string>
+
+    <string name="desc_panduan_lacak">Anda dapat melacak pesanan Anda selama <b><i>24 jam/7 hari</i></b> dengan mengikuti langkah - langkah berikut :
+        \n\n1. Buka <b>"Riwayat Pesanan"</b> di halaman Akun Saya
+        \n\n2. Masukkan <b>nomor pesanan</b> dan <b>e-mail</b> Anda
+        \n\n3. Tekan <b>"Lacak Sekarang"</b> untuk memproses
+        \n\nAtau Anda cukup klik <b>"Riwayat Pesanan"</b> setelah terlebih dahulu Masuk (login) ke akun INDOPEDIA.
+    </string>
+
+    <string name="desc_panduan_pembayaran_1"><b>INDOPEDIA</b> menyediakan beberapa metode pembayaran, diantaranya :
+        \n\n1. ATM yang dikeluarkan oleh 74 Bank yang ada di Indonesia, sehingga ATM apapun milik anda dapat dipastikan bisa melakukan transaksi di INDOPEDIA, yakni dengan cara proses pembayaran instan dari TELKOM FINPAY dengan memilih menu PEMBAYARAN TELKOM.
+        \n\n2. Minimarket : Proses pembayaran instan dari TELKOM FINPAY dengan memilih menu PEMBAYARAN TELKOM atau bayar di kasir Alfamart terdekat.
+        \n\n3. Kartu Kredit : Ini merupakan cara tercepat untuk membayar, saat ini Visa dan Master Card dapat digunakan untuk membayar.
+        \n\n<b>Cara Pembayaran Melalui Minimarket</b>
+        \n\n<b>ALFAMART</b>
+        \n\n1. Silakan pergi ke gerai alfamart terdekat dan infokan kepada kasir dengan menyebutkan "Pembayaran Jasa Telkom / Telepon".
+        \n\n2. Silakan menyebutkan kode pembayaran 12 Digit yang anda dapat pada saat pemesanan kepada kasir (contoh: 021-123456789).
+        \n\n3. Struk tercetak dan transaksi sukses.
+        \n\n<b>Cara Pembayaran Melalui Mesin ATM</b>\n
+    </string>
+
+    <string name="desc_panduan_pembayaran_2">\n<b>ATM MANDIRI</b>
+        \n\n1. Pilih Menu Bayar / Beli.
+        \n\n2. Pilih Menu Telepon / HP.
+        \n\n3. Pilih CDMA / Telkom dan Pilih Telkom / Speedy Vision.
+        \n\n4. Masukkan Kode 12 Digit kode pembayaran yang anda dapatkan. (contoh: 021-123456789)
+        \n\n5. Pilih YA untuk melanjutkan pembayaran.
+        \n\n<b>ATM BRI</b>
+        \n\n1. Pilih Menu TRANSAKSI LAIN.
+        \n\n2. Pilih Jenis Transaksi PEMBAYARAN.
+        \n\n3. Pilih Transaksi Pembayaran TELKOM/FLEXI/SPEEDY.
+        \n\n4. Masukkan 12 digit Payment Code. (contoh: 021-123456789)
+        \n\n5. Pilih YA untuk melanjutkan pembayaran.
+        \n\n<b>ATM BCA</b>
+        \n\n1. Pilih Menu TRANSAKSI LAINNYA.
+        \n\n2. Pilih Transaksi PEMBAYARAN.
+        \n\n3. Pilih Jenis Pembayaran TELEPON/HANDPHONE.
+        \n\n4. Pilih Operator Telepon TELKOM.
+        \n\n5. Masukkan 12 digit Payment Code. (contoh: 021-123456789)
+        \n\n6. Pilih YA untuk melanjutkan pembayaran.
+        \n\n<b>ATM BNI</b>
+        \n\n1. Pilih Menu MENU LAIN.
+        \n\n2. Pilih Transaksi PEMBAYARAN.
+        \n\n3. Pilih Jenis Pembayaran TELEPON/HP.
+        \n\n4. Pilih Jenis PembayaranTelepon TELKOM.
+        \n\n5. Pilih Jenis Pembayaran Telkom TELEPON/FLEXI/SPEEDY.
+        \n\n6. Masukkan 12 digit Payment Code ditambah angka "0" di depannya. (contoh: 0021-123456789)
+        \n\n7. Pilih Sumber Dana TABUNGAN.
+        \n\n8. Pilih YA untuk melanjutkan pembayaran.
+        \n\n<b>ATM DANAMON</b>
+        \n\n1. Pilih Jenis Transaksi PEMBAYARAN.
+        \n\n2. Pilih Jenis Pembayaran TELEPON.
+        \n\n3. Masukkan 3 digit awal kode pembayaran yang anda dapatkan dengan menambahkan “0” di depannya (0021)
+        \n\n4. Masukkan 9 digit terakhir kode pembayaran yang anda dapatkan. (contoh: 123456789)
+        \n\n5. Pilih Sumber Dana TABUNGAN.
+        \n\n6. Pilih YA untuk melanjutkan pembayaran.
+        \n\n<b>ATM BII</b>
+        \n\n1. Pilih Menu PEMBAYARAN/PEMBELIAN
+        \n\n2. Pilih Jenis Pembayaran LAYANAN UMUM
+        \n\n3. Pilih Jenis Pembayaran TELKOM/SPEEDY/FLEXI CLASSY/YES TV
+        \n\n4. Masukkan 12 digit Payment Code (contoh: 021-123456789)
+        \n\n5. Pilih Jenis Rekening TABUNGAN
+        \n\n6. Pilih YA untuk melanjutkan pembayaran
+        \n\n<b>ATM OCBC NISP</b>
+        \n\n1. Pilih MENU LAINNYA.
+        \n\n2. Pilih Transaksi PEMBAYARAN.
+        \n\n3. Pilih Jenis Pembayaran TELEPON/TELKOM.
+        \n\n4. Pilih Jenis Pembayaran TELP/FLEXI/SPEEDY.
+        \n\n5. Masukkan 3 digit awal kode pembayaran yang anda dapatkan dengan menambahkan “0” di depannya (0021)
+        \n\n6. Masukkan 9 digit terakhir kode pembayaran yang anda dapatkan. (contoh: 123456789)
+        \n\n7. Pilih YA untuk melanjutkan pembayaran.
+        \n\n<b>Contoh cara pembayaran melalui Internet &#038; Mobile Banking (untuk kode pembayaran 02111)</b>
+        \n\n<b>Internet Banking Bank Mandiri</b>
+        \n\n1. Login ke internet banking Mandiri : https://ib.bankmandiri.co.id/retail/Login.do?action=form&#038;lang=in_ID
+        \n\n2. Pilih menu BAYAR.
+        \n\n3. Pilih jenis menu TELEPON.
+        \n\n4. Pilih penyedia jasa TELKOM.
+        \n\n5. Masukkan 3 digit awal kode pembayaran dengan menambahkan “0” di depannya yang anda dapatkan pada kode area (0021).
+        \n\n6. Masukkan 9 digit kode pembayaran selanjutnya pada Nomor Telepon.
+        \n\n7. Klik Lanjutkan.
+        \n\n8. Masukkan challenge code ke token.
+        \n\n9. Masukkan kode token internet banking Mandiri.
+        \n\n<b>Internet Banking KlikBCA</b>
+        \n\n1. Login ke situs KlikBCA : http://www.klikbca.com/
+        \n\n2. Pilih menu pembayaran.
+        \n\n3. Pilih jenis pembayaran Telepon.
+        \n\n4. Pilih operator Telkom.
+        \n\n5. Masukkan “02111xxxxxxxx” 12 digit kode pembayaran yang anda dapatkan pada Kode Area &#038; Nomor Telepon.
+        \n\n6. Klik Lanjutkan.
+        \n\n7. Masukkan challenge code ke token.
+        \n\n8. Masukkan kode response yang muncul pada key BCA.
+        \n\n9. Klik Submit.
+    </string>
+
+    <string name="desc_panduan_pengiriman">Q : Jasa kurir pengiriman apa saja yang digunakan <b>INDOPEDIA</b> ?
+        \n\nA : Kami secara resmi bekerjasama dengan perusahaan jasa logistik berlisensi yang terpercaya.
+        \n\nQ : Dapatkah saya memilih layanan pengiriman ?
+        \n\nA : Untuk saat ini, demi efektivitas pengiriman, kami akan memilih yang terbaik untuk Anda.
+        \n\nQ : Berapa lama estimasi barang diterima Saya ?
+        \n\nA : Estimasi waktu barang diterima Anda dapat dilihat di detil masing-masing produk.
+    </string>
+
+    <string name="deskripsi_brg"><b>Tas Ransel AVTECH QARANI -\nKANAKA GEAR</b>
+        \n\nSpesifications:741
+        \nProduct Id: 0316
+        \nColors: UNGU, BIRU, HITAM
+        \nDimensions: 
+        \nDescriptions:
+        \nDaypack
+        \nKompartemen utama yang luas berdetail zipper opening
+
+        \n\nBest use : Travel, school
+        \nJenis tas : Bagpack
+        \nJumlah kantong eksterior : 1 kompartemen utama + 1 slip document + 3 slip kompartemen + 2 kompartemen samping
+        \nMaterial : Nylon
+        \nBerat : 1000 gram
+        \nGender : Women
+        \nInclude coverbag : Ya
+    </string>
+
+    <string name="spek_brg"><b>Tas Ransel AVTECH QARANI -\nKANAKA GEAR</b>
+        \n\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        \nSed ut perspiciatis unde omnis iste natus error sit voluptatem
+        \nAccusantium doloremque laudantium
+        \nTotam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+    </string>
+
+    <string name="panel_akun">Dari Panel Kontrol Akun, Anda dapat melihat detail akun, aktivitas terakhir, dan memperbaharui informasi akun Anda.
+        \nPilih Link di bawah ini untuk melihat atau mengubah informasi.
+    </string>
+
+    <string name="panel_pedagang">Dengan menggunakan akun ini, kami mengajukan permohonan menjadi pedagang. Anda harus melengkapi alamat lengkap untuk menjadi pedagang.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

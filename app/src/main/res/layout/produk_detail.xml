@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_landscape"
+    tools:context=".activity.ProdukDetail">
+
+    <android.support.v4.widget.NestedScrollView
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+
+        <!-- frame awal linear -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp">
+
+                    <include
+                        android:id="@+id/content_main"
+                        layout="@layout/image_produk" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/imv_kategori"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_coklat"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_back" />
+
+                <ImageView
+                    android:layout_marginStart="480dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/i2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_coklat"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_troli" />
+
+            </RelativeLayout>
+
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/indicator"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="2dp"
+                app:centered="true"
+                app:fillColor="#df0623"
+                app:pageColor="#fff"
+                app:snap="false" />
+
+            <!-- start judul barang -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_NamaProduk"
+                        android:layout_width="400dp"
+                        android:layout_height="wrap_content"
+                        android:text="Teks Nama Barang"
+                        android:textSize="20sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_statusStok"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/stok"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <!-- end judul barang -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/lightgray"/>
+
+            <!-- start judul harga -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_HargaProduk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 0"
+                    android:textColor="@color/teks"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+            <!-- end judul harga -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/lightgray"/>
+
+            <!-- start judul rating -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:text="Oleh : "
+                        android:textColor="@color/teks"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:id="@+id/tv_nmtoko"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="nama"
+                        android:textColor="@color/teks"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                        android:id="@+id/total_star_rating_1"
+                        style="@style/Widget.MaterialRatingBar.RatingBar"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginEnd="10dp"
+                        android:isIndicator="true"
+                        android:maxHeight="20dp"
+                        android:minHeight="20dp"
+                        android:numStars="5"
+                        android:stepSize="0.25"
+                        android:rating="4.5"
+                        app:mrb_progressBackgroundTint="@color/gelap"
+                        app:mrb_progressTint="@color/teks"
+                        app:mrb_secondaryProgressTint="@color/teks" />
+
+                    <TextView
+                        android:id="@+id/tv_jmlUlasan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="1 Ulasan"
+                        android:textColor="@color/teks"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <!-- end judul rating -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tablayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="?android:attr/actionBarSize"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    app:tabMode="scrollable" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pagerDetailProduk"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_margin="@dimen/tulisan" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_lastview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textColor="@color/teks"
+                android:textSize="20sp"
+                android:text="Terakhir Dilihat"/>
+
+            <HorizontalScrollView
+                android:id="@+id/category_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:padding="2dp">
+
+                <!-- start isi index kedua -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_margin="8dp">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cv_tl1"
+                        app:cardBackgroundColor="@android:color/transparent"
+                        app:cardElevation="0dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_margin="5dp">
+
+                        <LinearLayout
+                            android:background="@drawable/bg_putih_big"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/iv_tl1"
+                                android:src="@drawable/bg_coklat"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp" />
+
+                            <TextView
+                                android:id="@+id/tv_nmtl1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="1dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:text="TAS BODYPACK SELEMPANG AVTECH KAVALU - KANAGEAR"
+                                android:textColor="@color/teks"
+                                android:ellipsize="end"
+                                android:maxLines="1" />
+
+                            <TextView
+                                android:id="@+id/tv_hrgtl1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="2dp"
+                                android:text="Rp 125,000"
+                                android:textColor="@color/teks"
+                                android:textStyle="bold"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cv_tl2"
+                        app:cardBackgroundColor="@android:color/transparent"
+                        app:cardElevation="0dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_margin="5dp">
+
+                        <LinearLayout
+                            android:background="@drawable/bg_putih_big"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/iv_tl2"
+                                android:src="@drawable/bg_coklat"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp" />
+
+                            <TextView
+                                android:id="@+id/tv_nmtl2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="1dp"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:text="TAS DAYPACK CONSINA AMUR - KANAKAGEAR"
+                                android:textColor="@color/teks" />
+
+                            <TextView
+                                android:id="@+id/tv_hrgtl2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="2dp"
+                                android:text="Rp 355,000"
+                                android:textColor="@color/teks"
+                                android:textStyle="bold"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cv_tl3"
+                        app:cardBackgroundColor="@android:color/transparent"
+                        app:cardElevation="0dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_margin="5dp">
+
+                        <LinearLayout
+                            android:background="@drawable/bg_putih_big"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/iv_tl3"
+                                android:src="@drawable/bg_coklat"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"/>
+
+                            <TextView
+                                android:id="@+id/tv_nmtl3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="1dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:text="Tamanara Calla Sepatu Wanita - Black"
+                                android:textColor="@color/teks"
+                                android:ellipsize="end"
+                                android:maxLines="1" />
+
+                            <TextView
+                                android:id="@+id/tv_hrgtl3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="2dp"
+                                android:text="Rp"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cv_tl4"
+                        app:cardBackgroundColor="@android:color/transparent"
+                        app:cardElevation="0dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_margin="5dp">
+
+                        <LinearLayout
+                            android:background="@drawable/bg_putih_big"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/iv_tl4"
+                                android:src="@drawable/bg_coklat"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp" />
+
+                            <TextView
+                                android:id="@+id/tv_nmtl4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="1dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:text="Tamanara Aster Sepatu Wanita - White"
+                                android:textColor="@color/teks" />
+
+                            <TextView
+                                android:id="@+id/tv_hrgtl4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="2dp"
+                                android:text="Rp "
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+                <!-- end isi index ketiga -->
+            </HorizontalScrollView>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottompanel"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/coba_card"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <LinearLayout
+                android:background="@color/coklat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <Button
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_heart"
+                    android:layout_margin="@dimen/tulisan"
+                    android:textColor="@android:color/white"/>
+
+                <Button
+                    android:id="@+id/btn_beli"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="@dimen/tulisan"
+                    android:background="@color/teks"
+                    android:textColor="@android:color/white"
+                    android:text="@string/beli"/>
+                <Button
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_add"
+                    android:layout_margin="@dimen/tulisan"
+                    android:textColor="@android:color/white"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>

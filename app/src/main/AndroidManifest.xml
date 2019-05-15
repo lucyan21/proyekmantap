@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
 
     <application
         android:allowBackup="true"
@@ -15,9 +16,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/BelajarTema">
-
         <activity
-            android:name=".SplashScreen"
+            android:name=".activity.SplashScreen"
+            android:screenOrientation="sensorLandscape"
             android:theme="@style/AppFullScreenTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,8 +27,24 @@
             </intent-filter>
         </activity>
         <activity
-            android:screenOrientation="landscape"
-            android:name=".MainActivity"/>
+            android:name=".activity.MainActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".activity.ProdukList"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".activity.ProdukDetail"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".payment.Pulsa"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".payment.PaketData"
+            android:screenOrientation="sensorLandscape" />
+        <activity android:name=".activity.PanduanBelanja" />
+        <activity android:name=".activity.PanduanLacak" />
+        <activity android:name=".activity.PanduanPembayaran" />
+        <activity android:name=".activity.PanduanPengiriman"></activity>
     </application>
 
 </manifest>

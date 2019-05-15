@@ -3,6 +3,9 @@
     <color name="warnaUtama">#b61622</color>
     <color name="warnaUtamaGelap">#c70d06</color>
     <color name="warnaAccent">#c70d06</color>
-
+    <color name="gelap">#b1b0b0</color>
     <color name="teks">#755B38</color>
+    <color name="lightgray">#ededed</color>
+    <color name="coklat">#FFF8DC</color>
+    <color name="background">#323232</color>
 </resources>

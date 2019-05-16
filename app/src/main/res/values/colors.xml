@@ -8,4 +8,5 @@
     <color name="lightgray">#ededed</color>
     <color name="coklat">#FFF8DC</color>
     <color name="background">#323232</color>
+    <color name="white">#ffffff</color>
 </resources>

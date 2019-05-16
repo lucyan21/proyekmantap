@@ -2,15 +2,22 @@ package com.netwave.indopediaid.activity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
+import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.netwave.indopediaid.R;
 import com.netwave.indopediaid.payment.PaketData;
 import com.netwave.indopediaid.payment.Pulsa;
+
+import java.io.InputStream;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     //HomeModel model = null;
     String id;
 
-    CardView cv_pulsa, cv_kategori, cv_diskon, cv_halal, cv_paketdata;
+    CardView cv_pulsa, cv_kategori, cv_diskon, cv_halal, cv_paketdata, cv2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
 
         //BaseApiService api = new BaseApiService();
         //model = api.GetHomeModelFromApiUrl(DATA_FROM_NET);
+
+        //new DownloadImageFromInternet((ImageView) findViewById(R.id.banner1)).execute("http://indopedia.id/images/carousel/2980.jpg");
 
         Intent i = getIntent();
         id = i.getStringExtra("id");
@@ -51,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
         cv_diskon = findViewById(R.id.cv_diskon);
         cv_halal = findViewById(R.id.cv_halal);
         cv_paketdata = findViewById(R.id.cv_paketdata);
+        cv2 = findViewById(R.id.cv_handcraft);
 
 
         cv_pulsa.setOnClickListener(new View.OnClickListener() {
@@ -93,5 +103,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        cv2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, Profile.class);
+                startActivity(i);
+            }
+        });
     }
+
 }

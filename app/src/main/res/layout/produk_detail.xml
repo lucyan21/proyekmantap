@@ -24,18 +24,17 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="220dp"
                 android:orientation="vertical">
 
-                <RelativeLayout
+                <include
+                    android:id="@+id/content_main"
+                    layout="@layout/image_produk" />
+
+                <View
                     android:layout_width="match_parent"
-                    android:layout_height="220dp">
-
-                    <include
-                        android:id="@+id/content_main"
-                        layout="@layout/image_produk" />
-
-                </RelativeLayout>
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_carousel"/>
 
                 <ImageView
                     android:layout_marginStart="50dp"
@@ -270,7 +269,7 @@
 
                             <ImageView
                                 android:id="@+id/iv_tl1"
-                                android:src="@drawable/bg_coklat"
+                                android:src="@raw/produk_1"
                                 android:layout_width="100dp"
                                 android:layout_height="100dp" />
 
@@ -320,7 +319,7 @@
 
                             <ImageView
                                 android:id="@+id/iv_tl2"
-                                android:src="@drawable/bg_coklat"
+                                android:src="@raw/produk_2"
                                 android:layout_width="100dp"
                                 android:layout_height="100dp" />
 
@@ -370,7 +369,7 @@
 
                             <ImageView
                                 android:id="@+id/iv_tl3"
-                                android:src="@drawable/bg_coklat"
+                                android:src="@raw/produk_3"
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"/>
 
@@ -393,7 +392,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="2dp"
                                 android:layout_marginTop="2dp"
-                                android:text="Rp"
+                                android:text="Rp 355,000"
                                 android:textSize="12sp" />
 
                         </LinearLayout>
@@ -417,7 +416,7 @@
 
                             <ImageView
                                 android:id="@+id/iv_tl4"
-                                android:src="@drawable/bg_coklat"
+                                android:src="@raw/produk_4"
                                 android:layout_width="100dp"
                                 android:layout_height="100dp" />
 
@@ -440,7 +439,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="2dp"
                                 android:layout_marginTop="2dp"
-                                android:text="Rp "
+                                android:text="Rp 355,000"
                                 android:textSize="12sp" />
 
                         </LinearLayout>

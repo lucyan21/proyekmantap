@@ -174,7 +174,7 @@
 
                             <ImageView
                                 android:id="@+id/imgv_Produk_1"
-                                android:src="@drawable/bg_coklat"
+                                android:src="@raw/produk_1"
                                 android:layout_width="80dp"
                                 android:layout_height="80dp"
                                 android:padding="1dp" />
@@ -266,7 +266,7 @@
 
                             <ImageView
                                 android:id="@+id/imgv_Produk_2"
-                                android:src="@drawable/bg_coklat"
+                                android:src="@raw/produk_2"
                                 android:layout_width="80dp"
                                 android:layout_height="80dp"
                                 android:padding="1dp" />
@@ -358,7 +358,7 @@
 
                             <ImageView
                                 android:id="@+id/imgv_Produk_3"
-                                android:src="@drawable/bg_coklat"
+                                android:src="@raw/produk_2"
                                 android:layout_width="80dp"
                                 android:layout_height="80dp"
                                 android:padding="1dp" />
@@ -458,7 +458,7 @@
 
                             <ImageView
                                 android:id="@+id/imgv_Produk_4"
-                                android:src="@drawable/bg_coklat"
+                                android:src="@raw/produk_3"
                                 android:layout_width="80dp"
                                 android:layout_height="80dp"
                                 android:padding="1dp" />
@@ -550,7 +550,7 @@
 
                             <ImageView
                                 android:id="@+id/imgv_Produk_5"
-                                android:src="@drawable/bg_coklat"
+                                android:src="@raw/produk_3"
                                 android:layout_width="80dp"
                                 android:layout_height="80dp"
                                 android:padding="1dp" />
@@ -642,7 +642,7 @@
 
                             <ImageView
                                 android:id="@+id/imgv_Produk_6"
-                                android:src="@drawable/bg_coklat"
+                                android:src="@raw/produk_3"
                                 android:layout_width="80dp"
                                 android:layout_height="80dp"
                                 android:padding="1dp" />
@@ -742,7 +742,7 @@
 
                             <ImageView
                                 android:id="@+id/imgv_Produk_7"
-                                android:src="@drawable/bg_coklat"
+                                android:src="@raw/produk_5"
                                 android:layout_width="80dp"
                                 android:layout_height="80dp"
                                 android:padding="1dp"/>
@@ -834,7 +834,7 @@
 
                         <ImageView
                             android:id="@+id/imgv_Produk_8"
-                            android:src="@drawable/bg_coklat"
+                            android:src="@raw/produk_4"
                             android:layout_width="80dp"
                             android:layout_height="80dp"
                             android:padding="1dp"/>
@@ -926,7 +926,7 @@
 
                             <ImageView
                                 android:id="@+id/imgv_Produk_9"
-                                android:src="@drawable/bg_coklat"
+                                android:src="@raw/produk_4"
                                 android:layout_width="80dp"
                                 android:layout_height="80dp"
                                 android:padding="1dp"/>

@@ -3,16 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="220dp"
+    android:layout_height="180dp"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".activity.MainActivity"
-    android:background="@drawable/bg_carousel"
     tools:showIn="@layout/activity_main">
 
     <ImageView
         android:id="@+id/image"
+        android:src="@drawable/diskon"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_carousel"/>
 
     <android.support.v4.view.ViewPager
         android:id="@+id/pager"

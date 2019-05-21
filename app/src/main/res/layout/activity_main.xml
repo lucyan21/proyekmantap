@@ -9,58 +9,55 @@
     android:background="@drawable/bg_kayu"
     android:orientation="vertical">
 
-    <LinearLayout
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:paddingTop="5dp">
+        android:fitsSystemWindows="true">
 
-        <android.support.v4.widget.NestedScrollView
-            android:id="@+id/scroll"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0sp"
-            android:layout_weight="1" >
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="5dp">
 
-            <!-- frame awal linear -->
-            <LinearLayout
-                android:orientation="vertical"
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/scroll"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="0sp"
+                android:layout_weight="1" >
 
+                <!-- frame awal linear -->
                 <LinearLayout
-                    android:orientation="horizontal"
+                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <LinearLayout
-                        android:layout_width="280dp"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginEnd="15dp"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
-                        <LinearLayout
-                            android:layout_width="280dp"
-                            android:layout_height="180dp"
-                            android:orientation="vertical">
-
-                            <ImageView
-                                android:id="@+id/banner1"
-                                android:background="@drawable/banner_1"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="280dp"
-                            android:layout_marginEnd="20dp"
+                        <RelativeLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="vertical">
 
+                            <include
+                                android:id="@+id/content_main"
+                                layout="@layout/content_main" />
+
+                            <ImageView
+                                android:layout_marginTop="160dp"
+                                android:contentDescription="@string/action_settings"
+                                android:background="@drawable/ic_panah_disc"
+                                android:layout_width="200dp"
+                                android:layout_height="180dp"/>
+
                             <!-- start menu kategori -->
                             <LinearLayout
-                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="170dp"
+                                android:layout_marginStart="15dp"
                                 android:layout_marginEnd="10dp"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -98,7 +95,7 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:textColor="@color/teks"
-                                            android:textSize="22sp"
+                                            android:textSize="18sp"
                                             android:text="KATEGORI" />
 
                                     </LinearLayout>
@@ -135,7 +132,7 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:textColor="@color/teks"
-                                            android:textSize="22sp"
+                                            android:textSize="18sp"
                                             android:text="DISKON"/>
                                     </LinearLayout>
                                 </android.support.v7.widget.CardView>
@@ -171,404 +168,404 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:textColor="@color/teks"
-                                            android:textSize="22sp"
+                                            android:textSize="18sp"
                                             android:text="HALAL"/>
                                     </LinearLayout>
                                 </android.support.v7.widget.CardView>
                             </LinearLayout>
 
-                        </LinearLayout>
+                        </RelativeLayout>
+
+                        <com.viewpagerindicator.CirclePageIndicator
+                            android:id="@+id/indicatorMain"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_margin="2dp"
+                            app:centered="true"
+                            app:fillColor="#df0623"
+                            app:pageColor="#fff"
+                            app:snap="false" />
                     </LinearLayout>
 
-                    <RelativeLayout
-                        android:layout_width="280dp"
-                        android:layout_height="wrap_content">
 
-                        <include
-                            android:id="@+id/content_main"
-                            layout="@layout/content_main" />
-
-                        <ImageView
-                            android:layout_marginTop="165dp"
-                            android:background="@drawable/ic_panah_disc"
-                            android:layout_width="200dp"
-                            android:layout_height="110dp"/>
-
-                    </RelativeLayout>
-
-                    <com.viewpagerindicator.CirclePageIndicator
-                        android:id="@+id/indicator"
-                        android:layout_width="fill_parent"
+                    <!-- start menu kategori -->
+                    <LinearLayout
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:layout_margin="2dp"
-                        app:centered="true"
-                        app:fillColor="#df0623"
-                        app:pageColor="#fff"
-                        app:snap="false" />
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cv_pulsa"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:layout_width="80dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="5dp"
+                            app:cardBackgroundColor="@android:color/transparent"
+                            app:cardElevation="0dp"
+                            android:layout_gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/imv_pulsa"
+                                    android:background="@drawable/bg_coklat"
+                                    android:src="@drawable/ic_pulsa_new"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:padding="5dp"/>
+
+                                <TextView
+                                    android:id="@+id/tv_pulsa"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/teks"
+                                    android:textSize="18sp"
+                                    android:text="PULSA\n"/>
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cv_paketdata"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:layout_width="80dp"
+                            android:layout_height="120dp"
+                            app:cardBackgroundColor="@android:color/transparent"
+                            app:cardElevation="0dp"
+                            android:layout_margin="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/imv_paketdata"
+                                    android:background="@drawable/bg_coklat"
+                                    android:src="@drawable/ic_data_new"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:padding="5dp"/>
+
+                                <TextView
+                                    android:gravity="center"
+                                    android:id="@+id/tv_paketdata"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/teks"
+                                    android:textSize="18sp"
+                                    android:text="PAKET\nDATA"/>
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cv_pln"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:layout_width="80dp"
+                            android:layout_height="120dp"
+                            app:cardBackgroundColor="@android:color/transparent"
+                            app:cardElevation="0dp"
+                            android:layout_margin="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/imv_pln"
+                                    android:background="@drawable/bg_coklat"
+                                    android:src="@drawable/ic_pln_new"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:padding="5dp"/>
+
+                                <TextView
+                                    android:gravity="center"
+                                    android:id="@+id/tv_pln"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/teks"
+                                    android:textSize="18sp"
+                                    android:text="VOUCHER\nPLN"/>
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+                    <!-- end judul kategori -->
+
+                    <!-- start menu kategori -->
+                    <LinearLayout
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cv_tagihanPLN"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:layout_width="80dp"
+                            android:layout_height="120dp"
+                            app:cardBackgroundColor="@android:color/transparent"
+                            app:cardElevation="0dp"
+                            android:layout_margin="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/imv_tagihanPLN"
+                                    android:background="@drawable/bg_coklat"
+                                    android:src="@drawable/ic_pulsa_pln_new"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:padding="5dp"/>
+
+                                <TextView
+                                    android:gravity="center"
+                                    android:id="@+id/tv_tagihanPLN"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/teks"
+                                    android:textSize="18sp"
+                                    android:text="TAGIHAN\nPLN"/>
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cv_tagihanAIR"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:layout_width="80dp"
+                            android:layout_height="120dp"
+                            app:cardBackgroundColor="@android:color/transparent"
+                            app:cardElevation="0dp"
+                            android:layout_margin="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/imv_tagihanAIR"
+                                    android:background="@drawable/bg_coklat"
+                                    android:src="@drawable/ic_air_new"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:padding="5dp"/>
+
+                                <TextView
+                                    android:gravity="center"
+                                    android:id="@+id/tv_tagihanAIR"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/teks"
+                                    android:textSize="18sp"
+                                    android:text="TAGIHAN\nAIR"/>
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cv_food"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:layout_width="80dp"
+                            android:layout_height="120dp"
+                            app:cardBackgroundColor="@android:color/transparent"
+                            app:cardElevation="0dp"
+                            android:layout_margin="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/imv_food"
+                                    android:background="@drawable/bg_coklat"
+                                    android:src="@drawable/ic_food"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:padding="5dp"/>
+
+                                <TextView
+                                    android:gravity="center"
+                                    android:id="@+id/tv_food"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/teks"
+                                    android:textSize="18sp"
+                                    android:text="FOOD\nBEVERAGE"/>
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+                    <!-- end judul kategori -->
+
+                    <!-- start menu kategori -->
+                    <LinearLayout
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cv_fashion"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:layout_width="80dp"
+                            android:layout_height="120dp"
+                            app:cardBackgroundColor="@android:color/transparent"
+                            app:cardElevation="0dp"
+                            android:layout_margin="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/imgv_fashion"
+                                    android:background="@drawable/bg_coklat"
+                                    android:src="@drawable/ic_fashion_new"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:padding="5dp"/>
+
+                                <TextView
+                                    android:id="@+id/tv_fashion"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/teks"
+                                    android:textSize="18sp"
+                                    android:text="FASHION\n"/>
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cv_healthcare"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:layout_width="80dp"
+                            android:layout_height="120dp"
+                            app:cardBackgroundColor="@android:color/transparent"
+                            app:cardElevation="0dp"
+                            android:layout_margin="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/imgv_kesehatan"
+                                    android:background="@drawable/bg_coklat"
+                                    android:src="@drawable/ic_stetoskop"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:padding="5dp"/>
+
+                                <TextView
+                                    android:gravity="center"
+                                    android:id="@+id/tv_kesehatan"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/teks"
+                                    android:textSize="18sp"
+                                    android:text="HEALTH\nCARE"/>
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cv_handcraft"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:layout_width="80dp"
+                            android:layout_height="120dp"
+                            app:cardBackgroundColor="@android:color/transparent"
+                            app:cardElevation="0dp"
+                            android:layout_margin="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/imgv_handicraft"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:background="@drawable/bg_coklat"
+                                    android:padding="5dp"
+                                    android:src="@drawable/ic_handcraft" />
+
+                                <TextView
+                                    android:id="@+id/tv_handicraft"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="18sp"
+                                    android:gravity="center"
+                                    android:text="HANDI\nCRAFT"
+                                    android:textColor="@color/teks" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+                    <!-- end judul kategori -->
+
+                    <!-- frame end linear -->
                 </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+        </LinearLayout>
 
+        <android.support.design.widget.NavigationView
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/navigation_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/layout_header"
+            app:menu="@menu/item_navigasi" />
 
-                <!-- start menu kategori -->
-                <LinearLayout
-                    android:layout_marginTop="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center">
+    </android.support.v4.widget.DrawerLayout>
 
-                    <android.support.v7.widget.CardView
-                        android:id="@+id/cv_pulsa"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:foreground="?android:attr/selectableItemBackground"
-                        android:layout_width="80dp"
-                        android:layout_height="110dp"
-                        android:layout_margin="5dp"
-                        app:cardBackgroundColor="@android:color/transparent"
-                        app:cardElevation="0dp"
-                        android:layout_gravity="center">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:gravity="center">
-
-                            <ImageView
-                                android:id="@+id/imv_pulsa"
-                                android:background="@drawable/bg_coklat"
-                                android:src="@drawable/ic_pulsa_new"
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
-                                android:padding="5dp"/>
-
-                            <TextView
-                                android:id="@+id/tv_pulsa"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textColor="@color/teks"
-                                android:textSize="22sp"
-                                android:text="PULSA\n"/>
-
-                        </LinearLayout>
-                    </android.support.v7.widget.CardView>
-
-                    <android.support.v7.widget.CardView
-                        android:id="@+id/cv_paketdata"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:foreground="?android:attr/selectableItemBackground"
-                        android:layout_width="80dp"
-                        android:layout_height="110dp"
-                        app:cardBackgroundColor="@android:color/transparent"
-                        app:cardElevation="0dp"
-                        android:layout_margin="5dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:gravity="center">
-
-                            <ImageView
-                                android:id="@+id/imv_paketdata"
-                                android:background="@drawable/bg_coklat"
-                                android:src="@drawable/ic_data_new"
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
-                                android:padding="5dp"/>
-
-                            <TextView
-                                android:gravity="center"
-                                android:id="@+id/tv_paketdata"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textColor="@color/teks"
-                                android:textSize="22sp"
-                                android:text="PAKET\nDATA"/>
-                        </LinearLayout>
-                    </android.support.v7.widget.CardView>
-
-                    <android.support.v7.widget.CardView
-                        android:id="@+id/cv_pln"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:foreground="?android:attr/selectableItemBackground"
-                        android:layout_width="80dp"
-                        android:layout_height="110dp"
-                        app:cardBackgroundColor="@android:color/transparent"
-                        app:cardElevation="0dp"
-                        android:layout_margin="5dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:gravity="center">
-
-                            <ImageView
-                                android:id="@+id/imv_pln"
-                                android:background="@drawable/bg_coklat"
-                                android:src="@drawable/ic_pln_new"
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
-                                android:padding="5dp"/>
-
-                            <TextView
-                                android:gravity="center"
-                                android:id="@+id/tv_pln"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textColor="@color/teks"
-                                android:textSize="22sp"
-                                android:text="VOUCHER\nPLN"/>
-                        </LinearLayout>
-                    </android.support.v7.widget.CardView>
-
-                    <android.support.v7.widget.CardView
-                        android:id="@+id/cv_tagihanPLN"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:foreground="?android:attr/selectableItemBackground"
-                        android:layout_width="80dp"
-                        android:layout_height="110dp"
-                        app:cardBackgroundColor="@android:color/transparent"
-                        app:cardElevation="0dp"
-                        android:layout_margin="5dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:gravity="center">
-
-                            <ImageView
-                                android:id="@+id/imv_tagihanPLN"
-                                android:background="@drawable/bg_coklat"
-                                android:src="@drawable/ic_pulsa_pln_new"
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
-                                android:padding="5dp"/>
-
-                            <TextView
-                                android:gravity="center"
-                                android:id="@+id/tv_tagihanPLN"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textColor="@color/teks"
-                                android:textSize="22sp"
-                                android:text="TAGIHAN\nPLN"/>
-
-                        </LinearLayout>
-                    </android.support.v7.widget.CardView>
-
-                    <android.support.v7.widget.CardView
-                        android:id="@+id/cv_tagihanAIR"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:foreground="?android:attr/selectableItemBackground"
-                        android:layout_width="80dp"
-                        android:layout_height="110dp"
-                        app:cardBackgroundColor="@android:color/transparent"
-                        app:cardElevation="0dp"
-                        android:layout_margin="5dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:gravity="center">
-
-                            <ImageView
-                                android:id="@+id/imv_tagihanAIR"
-                                android:background="@drawable/bg_coklat"
-                                android:src="@drawable/ic_air_new"
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
-                                android:padding="5dp"/>
-
-                            <TextView
-                                android:gravity="center"
-                                android:id="@+id/tv_tagihanAIR"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textColor="@color/teks"
-                                android:textSize="22sp"
-                                android:text="TAGIHAN\nAIR"/>
-                        </LinearLayout>
-                    </android.support.v7.widget.CardView>
-                </LinearLayout>
-                <!-- end judul kategori -->
-
-                <!-- start menu kategori -->
-                <LinearLayout
-                    android:layout_marginTop="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center">
-
-                    <android.support.v7.widget.CardView
-                        android:id="@+id/cv_food"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:foreground="?android:attr/selectableItemBackground"
-                        android:layout_width="80dp"
-                        android:layout_height="110dp"
-                        app:cardBackgroundColor="@android:color/transparent"
-                        app:cardElevation="0dp"
-                        android:layout_margin="5dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:gravity="center">
-
-                            <ImageView
-                                android:id="@+id/imv_food"
-                                android:background="@drawable/bg_coklat"
-                                android:src="@drawable/ic_food"
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
-                                android:padding="5dp"/>
-
-                            <TextView
-                                android:gravity="center"
-                                android:id="@+id/tv_food"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textColor="@color/teks"
-                                android:textSize="22sp"
-                                android:text="FOOD\nBEVERAGE"/>
-                        </LinearLayout>
-                    </android.support.v7.widget.CardView>
-
-                    <android.support.v7.widget.CardView
-                        android:id="@+id/cv_fashion"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:foreground="?android:attr/selectableItemBackground"
-                        android:layout_width="80dp"
-                        android:layout_height="110dp"
-                        app:cardBackgroundColor="@android:color/transparent"
-                        app:cardElevation="0dp"
-                        android:layout_margin="5dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:gravity="center">
-
-                            <ImageView
-                                android:id="@+id/imgv_fashion"
-                                android:background="@drawable/bg_coklat"
-                                android:src="@drawable/ic_fashion_new"
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
-                                android:padding="5dp"/>
-
-                            <TextView
-                                android:id="@+id/tv_fashion"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textColor="@color/teks"
-                                android:textSize="22sp"
-                                android:text="FASHION\n"/>
-
-                        </LinearLayout>
-                    </android.support.v7.widget.CardView>
-
-                    <android.support.v7.widget.CardView
-                        android:id="@+id/cv_healthcare"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:foreground="?android:attr/selectableItemBackground"
-                        android:layout_width="80dp"
-                        android:layout_height="110dp"
-                        app:cardBackgroundColor="@android:color/transparent"
-                        app:cardElevation="0dp"
-                        android:layout_margin="5dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:gravity="center">
-
-                            <ImageView
-                                android:id="@+id/imgv_kesehatan"
-                                android:background="@drawable/bg_coklat"
-                                android:src="@drawable/ic_stetoskop"
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
-                                android:padding="5dp"/>
-
-                            <TextView
-                                android:gravity="center"
-                                android:id="@+id/tv_kesehatan"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textColor="@color/teks"
-                                android:textSize="22sp"
-                                android:text="HEALTH\nCARE"/>
-                        </LinearLayout>
-                    </android.support.v7.widget.CardView>
-
-                    <android.support.v7.widget.CardView
-                        android:id="@+id/cv_handcraft"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:foreground="?android:attr/selectableItemBackground"
-                        android:layout_width="80dp"
-                        android:layout_height="110dp"
-                        app:cardBackgroundColor="@android:color/transparent"
-                        app:cardElevation="0dp"
-                        android:layout_margin="5dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:orientation="vertical">
-
-                            <ImageView
-                                android:id="@+id/imgv_handicraft"
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
-                                android:background="@drawable/bg_coklat"
-                                android:padding="5dp"
-                                android:src="@drawable/ic_handcraft" />
-
-                            <TextView
-                                android:id="@+id/tv_handicraft"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textSize="22sp"
-                                android:gravity="center"
-                                android:text="HANDI\nCRAFT"
-                                android:textColor="@color/teks" />
-                        </LinearLayout>
-                    </android.support.v7.widget.CardView>
-                </LinearLayout>
-                <!-- end judul kategori -->
-
-                <!-- start menu kategori -->
-                <LinearLayout
-                    android:layout_marginStart="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center">
-
-                </LinearLayout>
-                <!-- end judul kategori -->
-
-                <!-- frame end linear -->
-            </LinearLayout>
-        </android.support.v4.widget.NestedScrollView>
-    </LinearLayout>
 </LinearLayout>

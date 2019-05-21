@@ -10,7 +10,6 @@
 
     <ImageView
         android:id="@+id/image"
-        android:src="@drawable/diskon"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 

@@ -10,48 +10,54 @@
 
     <application
         android:allowBackup="true"
-        android:largeHeap="true"
-        android:icon="@mipmap/ic_launcher"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/icon"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:supportsRtl="true"
         android:theme="@style/IndopediaTheme">
         <activity
             android:name=".activity.MainActivity"
-            android:screenOrientation="sensorLandscape" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activity.ProdukList"
-            android:screenOrientation="sensorLandscape" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activity.ProdukDetail"
-            android:screenOrientation="sensorLandscape" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".payment.Pulsa"
-            android:screenOrientation="sensorLandscape" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".payment.PaketData"
-            android:screenOrientation="sensorLandscape" />
-
+            android:screenOrientation="portrait" />
         <activity android:name=".activity.PanduanBelanja" />
         <activity android:name=".activity.PanduanLacak" />
         <activity android:name=".activity.PanduanPembayaran" />
         <activity android:name=".activity.PanduanPengiriman" />
-
         <activity
             android:name=".activity.Profile"
-            android:screenOrientation="sensorLandscape" />
-
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activity.SplashScreen"
-            android:screenOrientation="sensorLandscape"
+            android:screenOrientation="portrait"
             android:theme="@style/AppFullScreenTheme">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
+        <activity android:name=".payment.PulsaPLN" />
+        <activity android:name=".payment.TagihanPLN" />
+        <activity android:name=".categories.ct_Handcraft" />
+        <activity android:name=".categories.ct_Fashion" />
+        <activity android:name=".categories.ct_Healthcare" />
+        <activity android:name=".categories.ct_Food" />
+        <activity android:name=".activity.ck_Produk" />
+        <activity android:name=".activity.ck_Sum" />
+        <activity android:name=".activity.ck_Payment" />
+        <activity android:name=".activity.ck_Pengiriman"></activity>
     </application>
 
 </manifest>

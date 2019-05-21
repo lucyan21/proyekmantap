@@ -6,9 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/bg_landscape"
+    android:background="@drawable/bg_kayu"
     tools:context=".activity.Profile">
-
 
         <android.support.design.widget.TabLayout
             android:id="@+id/tablayoutProfile"

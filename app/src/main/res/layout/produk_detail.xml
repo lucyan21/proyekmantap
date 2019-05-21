@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/bg_landscape"
+    android:background="@drawable/bg_kayu"
     tools:context=".activity.ProdukDetail">
 
     <android.support.v4.widget.NestedScrollView
@@ -24,21 +24,22 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="220dp"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <include
-                    android:id="@+id/content_main"
-                    layout="@layout/image_produk" />
-
-                <View
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/bg_carousel"/>
+                    android:layout_height="220dp">
+
+                    <include
+                        android:id="@+id/content_main"
+                        layout="@layout/image_produk" />
+
+                </RelativeLayout>
 
                 <ImageView
-                    android:layout_marginStart="50dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="10dp"
                     android:id="@+id/imv_kategori"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
@@ -47,8 +48,8 @@
                     android:src="@drawable/ic_back" />
 
                 <ImageView
-                    android:layout_marginStart="480dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="280dp"
+                    android:layout_marginTop="10dp"
                     android:id="@+id/i2"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
@@ -84,7 +85,7 @@
 
                     <TextView
                         android:id="@+id/tv_NamaProduk"
-                        android:layout_width="400dp"
+                        android:layout_width="250dp"
                         android:layout_height="wrap_content"
                         android:text="Teks Nama Barang"
                         android:textSize="20sp"/>
@@ -94,9 +95,7 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="100dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp">
+                    android:layout_margin="5dp">
 
                     <TextView
                         android:id="@+id/tv_statusStok"
@@ -112,7 +111,7 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="5dp"
+                android:layout_height="1dp"
                 android:background="@color/lightgray"/>
 
             <!-- start judul harga -->
@@ -135,7 +134,7 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="5dp"
+                android:layout_height="1dp"
                 android:background="@color/lightgray"/>
 
             <!-- start judul rating -->
@@ -148,20 +147,14 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
+                    android:orientation="vertical"
                     android:layout_margin="5dp">
 
                     <TextView
-                        android:layout_width="40dp"
+                        android:id="@+id/tv_nmtoko"
+                        android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:text="Oleh : "
-                        android:textColor="@color/teks"
-                        android:textSize="20sp"/>
-                    <TextView
-                        android:id="@+id/tv_nmtoko"
-                        android:layout_width="200dp"
-                        android:layout_height="wrap_content"
-                        android:text="nama"
                         android:textColor="@color/teks"
                         android:textSize="20sp"/>
                 </LinearLayout>
@@ -176,8 +169,7 @@
                         android:id="@+id/total_star_rating_1"
                         style="@style/Widget.MaterialRatingBar.RatingBar"
                         android:layout_width="100dp"
-                        android:layout_height="30dp"
-                        android:layout_marginStart="120dp"
+                        android:layout_height="20dp"
                         android:layout_marginEnd="10dp"
                         android:isIndicator="true"
                         android:maxHeight="20dp"
@@ -193,7 +185,7 @@
                         android:id="@+id/tv_jmlUlasan"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20sp"
+                        android:textSize="15sp"
                         android:text="1 Ulasan"
                         android:textColor="@color/teks"/>
 
@@ -261,7 +253,7 @@
                         android:layout_margin="5dp">
 
                         <LinearLayout
-                            android:background="@drawable/bg_putih_big"
+                            android:background="@drawable/bg_putih_new"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:gravity="center"
@@ -269,7 +261,7 @@
 
                             <ImageView
                                 android:id="@+id/iv_tl1"
-                                android:src="@raw/produk_1"
+                                android:src="@drawable/bg_hijau"
                                 android:layout_width="100dp"
                                 android:layout_height="100dp" />
 
@@ -311,7 +303,7 @@
                         android:layout_margin="5dp">
 
                         <LinearLayout
-                            android:background="@drawable/bg_putih_big"
+                            android:background="@drawable/bg_putih_new"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:gravity="center"
@@ -319,7 +311,7 @@
 
                             <ImageView
                                 android:id="@+id/iv_tl2"
-                                android:src="@raw/produk_2"
+                                android:src="@drawable/bg_hijau"
                                 android:layout_width="100dp"
                                 android:layout_height="100dp" />
 
@@ -361,7 +353,7 @@
                         android:layout_margin="5dp">
 
                         <LinearLayout
-                            android:background="@drawable/bg_putih_big"
+                            android:background="@drawable/bg_putih_new"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:gravity="center"
@@ -369,7 +361,7 @@
 
                             <ImageView
                                 android:id="@+id/iv_tl3"
-                                android:src="@raw/produk_3"
+                                android:src="@drawable/bg_hijau"
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"/>
 
@@ -392,7 +384,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="2dp"
                                 android:layout_marginTop="2dp"
-                                android:text="Rp 355,000"
+                                android:text="Rp"
                                 android:textSize="12sp" />
 
                         </LinearLayout>
@@ -408,7 +400,7 @@
                         android:layout_margin="5dp">
 
                         <LinearLayout
-                            android:background="@drawable/bg_putih_big"
+                            android:background="@drawable/bg_putih_new"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:gravity="center"
@@ -416,7 +408,7 @@
 
                             <ImageView
                                 android:id="@+id/iv_tl4"
-                                android:src="@raw/produk_4"
+                                android:src="@drawable/bg_hijau"
                                 android:layout_width="100dp"
                                 android:layout_height="100dp" />
 
@@ -439,7 +431,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="2dp"
                                 android:layout_marginTop="2dp"
-                                android:text="Rp 355,000"
+                                android:text="Rp "
                                 android:textSize="12sp" />
 
                         </LinearLayout>
@@ -465,17 +457,16 @@
             android:layout_height="50dp">
 
             <LinearLayout
-                android:background="@color/coklat"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
                 android:gravity="center"
-                android:layout_gravity="center">
+                android:background="@color/coklat">
 
                 <Button
                     style="?android:attr/buttonBarButtonStyle"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
                     android:background="@drawable/ic_heart"
                     android:layout_margin="@dimen/tulisan"
                     android:textColor="@android:color/white"/>
@@ -491,9 +482,9 @@
                     android:text="@string/beli"/>
                 <Button
                     style="?android:attr/buttonBarButtonStyle"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:background="@drawable/ic_add"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_add_shopping"
                     android:layout_margin="@dimen/tulisan"
                     android:textColor="@android:color/white"/>
 

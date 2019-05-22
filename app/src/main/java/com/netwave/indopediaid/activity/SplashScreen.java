@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import com.netwave.indopediaid.R;
+import com.netwave.indopediaid.tester.Test_Page;
 
 public class SplashScreen extends Activity {
 
@@ -23,7 +24,7 @@ public class SplashScreen extends Activity {
             @Override
             public void run() {
 
-                Intent mainIntent = new Intent(SplashScreen.this, MainActivity.class);
+                Intent mainIntent = new Intent(SplashScreen.this, Test_Page.class);
                 startActivity(mainIntent);
                 finish();
             }

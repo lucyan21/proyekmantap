@@ -2,28 +2,34 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/nav_header"
     android:layout_width="match_parent"
-    android:layout_height="160dp"
-    android:background="@color/side_bar"
-    android:clickable="true"
-    android:focusable="true"
-    android:foreground="?attr/selectableItemBackgroundBorderless"
-    android:gravity="bottom"
-    android:orientation="vertical"
-    android:padding="16dp"
-    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+    android:layout_height="wrap_content"
+    android:background="@drawable/main_header_selector"
+    android:orientation="vertical">
+    
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/nav_header_imageView"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:src="@mipmap/ic_launcher" />
+        <ImageView
+            android:id="@+id/nav_header_imageView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_account"/>
+
+    </LinearLayout>
 
     <TextView
-        android:id="@+id/nav_header_textView"
-        android:layout_width="match_parent"
+        android:id="@+id/name"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="16dp"
-        android:textColor="@color/teks"
-        android:text="Nama User"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        android:gravity="left|start"
+        android:paddingTop="10dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:text="Nama User" />
 </LinearLayout>

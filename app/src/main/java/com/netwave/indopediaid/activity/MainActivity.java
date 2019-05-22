@@ -43,9 +43,9 @@ public class MainActivity extends AppCompatActivity {
     private static int currentPage = 0;
     private static int NUM_PAGES = 0;
 
-    private String[] urls = new String[] { "http://m.indopedia.id/mobile/img/carousel/samsata.jpg",
-            "http://m.indopedia.id/mobile/img/carousel/keroncong-fes.jpg",
-            "http://m.indopedia.id/mobile/img/carousel/iklan-pencerah-wajah.jpg" };
+    private String[] urls = new String[] { "https://m.indopedia.id/mobile/img/carousel/samsata.jpg",
+            "https://m.indopedia.id/mobile/img/carousel/keroncong-fes.jpg",
+            "https://m.indopedia.id/mobile/img/carousel/iklan-pencerah-wajah.jpg" };
 
 
     //HomeModel model = null;
@@ -155,7 +155,7 @@ public class MainActivity extends AppCompatActivity {
                 mDrawerLayout.closeDrawers();
                 switch (menuItem.getItemId()) {
                     case R.id.txtLogin:
-                        Intent klikLogin = new Intent(MainActivity.this, MainActivity.class);
+                        Intent klikLogin = new Intent(MainActivity.this, Page_Login.class);
                         startActivity(klikLogin);
                         return true;
                     case R.id.nav_home:
@@ -163,29 +163,30 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(klik);
                         return true;
                     case R.id.nav_profile:
-                        Intent klik_2 = new Intent(MainActivity.this, MainActivity.class);
+                        Intent klik_2 = new Intent(MainActivity.this, Profile.class);
                         startActivity(klik_2);
                         return true;
                     case R.id.nav_list:
                         Toast.makeText(getApplicationContext(), "It is Work", Toast.LENGTH_SHORT).show();
                         return true;
                     case R.id.nav_testPage:
-                        Intent klik_5 = new Intent(MainActivity.this, MainActivity.class);
+                        Intent klik_5 = new Intent(MainActivity.this, ck_Payment.class);
                         startActivity(klik_5);
                         return true;
                     case R.id.nav_bantuan:
-                        Intent klik_4 = new Intent(MainActivity.this, MainActivity.class);
+                        Intent klik_4 = new Intent(MainActivity.this, ck_Pengiriman.class);
                         startActivity(klik_4);
                         return true;
                     case R.id.nav_blogs:
                         Toast.makeText(getApplicationContext(), "It is Work", Toast.LENGTH_SHORT).show();
                         return true;
                     case R.id.nav_about:
-                        Intent kilik = new Intent(MainActivity.this, MainActivity.class);
+                        Intent kilik = new Intent(MainActivity.this, ck_Produk.class);
                         startActivity(kilik);
                         return true;
                     case R.id.nav_join:
-                        Toast.makeText(getApplicationContext(), "It is Work", Toast.LENGTH_SHORT).show();
+                        Intent i = new Intent(MainActivity.this, ck_Sum.class);
+                        startActivity(i);
                         return true;
                     case R.id.nav_cs:
                         Toast.makeText(getApplicationContext(), "It is Work", Toast.LENGTH_SHORT).show();

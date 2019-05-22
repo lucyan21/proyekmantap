@@ -57,7 +57,10 @@
         <activity android:name=".activity.ck_Produk" />
         <activity android:name=".activity.ck_Sum" />
         <activity android:name=".activity.ck_Payment" />
-        <activity android:name=".activity.ck_Pengiriman"></activity>
+        <activity android:name=".activity.ck_Pengiriman" />
+        <activity android:name=".activity.Page_Login" />
+        <activity android:name=".activity.Page_Register" />
+        <activity android:name=".tester.Test_Page"></activity>
     </application>
 
 </manifest>

@@ -566,19 +566,7 @@
             app:headerLayout="@layout/layout_header"
             app:menu="@menu/item_navigasi">
 
-            <ExpandableListView
-                android:id="@+id/navList"
-                android:layout_gravity="left|start"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="300dp"
-                android:background="@android:color/white"
-                android:divider="@color/dividerColor"
-                android:dividerHeight="0.5dp"
-                android:indicatorRight="?android:attr/expandableListPreferredItemIndicatorRight" />
-
         </android.support.design.widget.NavigationView>
-
 
     </android.support.v4.widget.DrawerLayout>
 

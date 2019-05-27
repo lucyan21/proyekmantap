@@ -60,7 +60,9 @@
         <activity android:name=".activity.ck_Pengiriman" />
         <activity android:name=".activity.Page_Login" />
         <activity android:name=".activity.Page_Register" />
-        <activity android:name=".tester.Test_Page"></activity>
+        <activity android:name=".tester.Test_Page" />
+        <activity android:name=".activity.Bantuan" />
+        <activity android:name=".activity.About_Us"></activity>
     </application>
 
 </manifest>

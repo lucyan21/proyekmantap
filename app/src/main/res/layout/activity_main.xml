@@ -533,9 +533,8 @@
                                     android:id="@+id/imgv_handicraft"
                                     android:layout_width="60dp"
                                     android:layout_height="60dp"
-                                    android:background="@drawable/bg_coklat"
-                                    android:padding="5dp"
-                                    android:src="@drawable/ic_handcraft" />
+                                    android:background="@drawable/ic_handcraft"
+                                    android:padding="5dp" />
 
                                 <TextView
                                     android:id="@+id/tv_handicraft"
@@ -563,7 +562,8 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="start"
-            app:headerLayout="@layout/layout_header"/>
+            app:headerLayout="@layout/layout_header"
+            app:menu="@menu/item_navigasi"/>
 
     </android.support.v4.widget.DrawerLayout>
 

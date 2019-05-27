@@ -6,7 +6,7 @@
     <string name="openDrawer">Drawer dibuka</string>
     <string name="closeDrawer">Drawer ditutup</string>
     <string name="navigation_view_item_1">Beranda</string>
-    <string name="navigation_view_item_2">Profil</string>
+    <string name="navigation_view_item_2">Akun Saya</string>
     <string name="navigation_view_item_3">Kategori</string>
 
     <string name="navigasi_kategori_2">Sub Item Navigasi</string>
@@ -51,6 +51,9 @@
     <string name="page_pulsa">Pulsa</string>
     <string name="page_data">Paket Data</string>
     <string name="page_pln">Tagihan PLN</string>
+
+    <string name="login">Login</string>
+    <string name="regis">Register</string>
 
     <string-array name="urutan">
         <item>Tanggal Dibuat</item>

@@ -7,7 +7,9 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.netwave.indopediaid.R;
@@ -40,6 +42,7 @@ public class ProdukDetail extends AppCompatActivity {
 
     public TextView tv1,tv2,tv3, tv_statusStok, tv_nmtoko, tv_jmlUlasan;
     public Button btn_beli;
+    ImageView imv_tblback, imv_troli;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,8 +61,32 @@ public class ProdukDetail extends AppCompatActivity {
         tv_statusStok = findViewById(R.id.tv_statusStok);
         tv_nmtoko = findViewById(R.id.tv_nmtoko);
         tv_jmlUlasan = findViewById(R.id.tv_jmlUlasan);
+        imv_tblback = findViewById(R.id.imv_tblback);
+        imv_troli = findViewById(R.id.imv_troli);
 
         btn_beli = findViewById(R.id.btn_beli);
+
+        imv_tblback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
+
+        imv_troli.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(ProdukDetail.this, ck_Produk.class);
+                startActivity(i);
+            }
+        });
+        btn_beli.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(ProdukDetail.this, ck_Produk.class);
+                startActivity(i);
+            }
+        });
 
         //fungsi untuk carousel
         addCarousel();

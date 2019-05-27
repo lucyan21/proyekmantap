@@ -23,9 +23,11 @@ import android.widget.Toast;
 
 import com.netwave.indopediaid.R;
 import com.netwave.indopediaid.adapter.ImageCarouselAdapter;
+import com.netwave.indopediaid.api.BaseApiService;
 import com.netwave.indopediaid.payment.PaketData;
 import com.netwave.indopediaid.payment.Pulsa;
 
+import com.netwave.indopediaid.viewmodels.catalog.HomeModel;
 import com.viewpagerindicator.CirclePageIndicator;
 
 import java.io.InputStream;
@@ -48,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
             "https://m.indopedia.id/mobile/img/carousel/iklan-pencerah-wajah.jpg" };
 
 
-    //HomeModel model = null;
+    HomeModel model = null;
     String id;
 
     CardView cv_pulsa, cv_kategori, cv_diskon, cv_halal, cv_paketdata, cv2;
@@ -62,16 +64,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //BaseApiService api = new BaseApiService();
-        //model = api.GetHomeModelFromApiUrl(DATA_FROM_NET);
+        BaseApiService api = new BaseApiService();
+        model = api.GetHomeModelFromApiUrl(DATA_FROM_NET);
 
         //new DownloadImageFromInternet((ImageView) findViewById(R.id.banner1)).execute("http://indopedia.id/images/carousel/2980.jpg");
 
         //fungsi untuk carousel
         addCarousel();
-
-        Intent i = getIntent();
-        id = i.getStringExtra("id");
 
         tv_kategori = findViewById(R.id.tv_kategori);
         tv_diskon = findViewById(R.id.tv_diskon);
@@ -93,51 +92,69 @@ public class MainActivity extends AppCompatActivity {
         cv_paketdata = findViewById(R.id.cv_paketdata);
         cv2 = findViewById(R.id.cv_handcraft);
 
-
+        int i = 5;
+        tv_pulsa.setId(i);
         cv_pulsa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(MainActivity.this, Pulsa.class);
+                String str = Integer.toString(tv_pulsa.getId());
+                i.putExtra("id", str);
                 startActivity(i);
             }
         });
 
+        tv_paketdata.setId(i);
         cv_paketdata.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(MainActivity.this, PaketData.class);
+                String str = Integer.toString(tv_paketdata.getId());
+                i.putExtra("id", str);
                 startActivity(i);
             }
         });
 
+        tv_kategori.setId(i);
         cv_kategori.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(MainActivity.this, ProdukList.class);
+                String str = Integer.toString(tv_kategori.getId());
+                i.putExtra("id", str);
                 startActivity(i);
             }
         });
 
+        tv_diskon.setId(i);
         cv_diskon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(MainActivity.this, ProdukList.class);
+                String str = Integer.toString(tv_diskon.getId());
+                i.putExtra("id", str);
                 startActivity(i);
             }
         });
 
+        tv_halal.setId(i);
         cv_halal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(MainActivity.this, ProdukList.class);
+                String str = Integer.toString(tv_halal.getId());
+                i.putExtra("id", str);
                 startActivity(i);
             }
         });
 
+        tv_hand.setId(i);
         cv2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(MainActivity.this, Profile.class);
+                String str = Integer.toString(tv_hand.getId());
+                i.putExtra("id", str);
                 startActivity(i);
             }
         });
@@ -170,23 +187,21 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(), "It is Work", Toast.LENGTH_SHORT).show();
                         return true;
                     case R.id.nav_testPage:
-                        Intent klik_5 = new Intent(MainActivity.this, ck_Payment.class);
-                        startActivity(klik_5);
+                        Toast.makeText(getApplicationContext(), "It is Work", Toast.LENGTH_SHORT).show();
                         return true;
                     case R.id.nav_bantuan:
-                        Intent klik_4 = new Intent(MainActivity.this, ck_Pengiriman.class);
+                        Intent klik_4 = new Intent(MainActivity.this, Bantuan.class);
                         startActivity(klik_4);
                         return true;
                     case R.id.nav_blogs:
                         Toast.makeText(getApplicationContext(), "It is Work", Toast.LENGTH_SHORT).show();
                         return true;
                     case R.id.nav_about:
-                        Intent kilik = new Intent(MainActivity.this, ck_Produk.class);
+                        Intent kilik = new Intent(MainActivity.this, About_Us.class);
                         startActivity(kilik);
                         return true;
                     case R.id.nav_join:
-                        Intent i = new Intent(MainActivity.this, ck_Sum.class);
-                        startActivity(i);
+                        Toast.makeText(getApplicationContext(), "It is Work", Toast.LENGTH_SHORT).show();
                         return true;
                     case R.id.nav_cs:
                         Toast.makeText(getApplicationContext(), "It is Work", Toast.LENGTH_SHORT).show();
@@ -269,4 +284,12 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    public void onBackPressed(){
+        super.onBackPressed();
+        Intent i=new Intent(Intent.ACTION_MAIN);
+        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        finish();
+    }
 }

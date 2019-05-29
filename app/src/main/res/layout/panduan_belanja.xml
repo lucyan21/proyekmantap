@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/bg_kayu"
-    tools:context=".activity.PanduanBelanja" >
+    tools:context="frontend.netwave.indopediaid.activity.PanduanBelanja" >
 
     <LinearLayout
         android:layout_marginTop="@dimen/activity_vertical_margin"
@@ -31,6 +31,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="22sp"
+                    android:textColor="@color/teks"
                     android:text="@string/desc_panduan_belanja"
                     android:textAppearance="?android:attr/textAppearanceMedium" />
             </LinearLayout>

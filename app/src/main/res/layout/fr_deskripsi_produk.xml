@@ -14,7 +14,8 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="@string/deskripsi_brg"
-            android:textSize="@dimen/tulisan" />
+            android:textSize="20sp"
+            android:textColor="@color/teks" />
 
     </android.support.v4.widget.NestedScrollView>
 

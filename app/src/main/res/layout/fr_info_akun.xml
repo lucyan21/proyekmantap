@@ -41,7 +41,8 @@
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="5dp"
                         android:text="Ubah Data Akun"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textColor="@color/teks"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -49,7 +50,8 @@
                         android:layout_marginStart="@dimen/tulisan"
                         android:layout_marginTop="10dp"
                         android:text="Email"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textColor="@color/teks"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -57,14 +59,6 @@
                         android:layout_marginStart="@dimen/tulisan"
                         android:layout_marginTop="5dp"
                         android:text="admin@admin.com | Ganti Email" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/tulisan"
-                        android:layout_marginTop="10dp"
-                        android:text="Nama *"
-                        android:textStyle="bold" />
 
                     <android.support.design.widget.TextInputLayout
                         android:layout_width="match_parent"
@@ -74,7 +68,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="textEmailAddress"
-                            android:hint="Nama" />
+                            android:textColor="@color/teks"
+                            android:hint="Nama *" />
                     </android.support.design.widget.TextInputLayout>
 
                     <TextView
@@ -83,7 +78,8 @@
                         android:layout_marginStart="@dimen/tulisan"
                         android:layout_marginTop="5dp"
                         android:text="Jenis Kelamin *"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textColor="@color/teks"/>
 
                     <RadioGroup
                         android:layout_marginStart="@dimen/tulisan"
@@ -95,12 +91,14 @@
                             android:id="@+id/Pria"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:textColor="@color/teks"
                             android:text="Pria" />
 
                         <RadioButton
                             android:id="@+id/wanita"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:textColor="@color/teks"
                             android:text="Wanita" />
 
                     </RadioGroup>
@@ -111,7 +109,8 @@
                         android:layout_marginStart="@dimen/tulisan"
                         android:layout_marginTop="5dp"
                         android:text="Tanggal Lahir *"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textColor="@color/teks"/>
 
                     <android.support.design.widget.TextInputLayout
                         android:layout_width="match_parent"
@@ -130,7 +129,8 @@
                         android:layout_marginStart="@dimen/tulisan"
                         android:layout_marginTop="5dp"
                         android:text="Alamat *"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textColor="@color/teks"/>
 
                     <android.support.design.widget.TextInputLayout
                         android:layout_width="match_parent"
@@ -151,6 +151,7 @@
                         android:layout_marginRight="@dimen/tulisan"
                         android:layout_marginBottom="10dp"
                         android:entries="@array/sp_provinsi"
+                        android:textColor="@color/teks"
                         android:padding="10dp" />
 
                     <Spinner
@@ -161,6 +162,7 @@
                         android:layout_marginRight="@dimen/tulisan"
                         android:layout_marginBottom="10dp"
                         android:entries="@array/sp_kota"
+                        android:textColor="@color/teks"
                         android:padding="10dp" />
 
                     <Spinner
@@ -171,6 +173,7 @@
                         android:layout_marginRight="@dimen/tulisan"
                         android:layout_marginBottom="10dp"
                         android:entries="@array/sp_kecamatan"
+                        android:textColor="@color/teks"
                         android:padding="10dp" />
 
                     <Spinner
@@ -181,6 +184,7 @@
                         android:layout_marginRight="@dimen/tulisan"
                         android:layout_marginBottom="10dp"
                         android:entries="@array/sp_kelurahan"
+                        android:textColor="@color/teks"
                         android:padding="10dp" />
 
                     <TextView
@@ -189,6 +193,7 @@
                         android:layout_marginStart="@dimen/tulisan"
                         android:layout_marginTop="5dp"
                         android:text="Nomor Telepon *"
+                        android:textColor="@color/teks"
                         android:textStyle="bold" />
 
                     <android.support.design.widget.TextInputLayout
@@ -207,6 +212,7 @@
                         android:layout_height="30dp"
                         android:layout_marginStart="@dimen/tulisan"
                         android:layout_marginTop="10dp"
+                        android:layout_marginBottom="@dimen/tulisan"
                         android:background="@color/teks"
                         android:textColor="@color/white"
                         android:text="Simpan" />

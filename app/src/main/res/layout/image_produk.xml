@@ -4,9 +4,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="220dp"
+    android:layout_height="400dp"
+    android:layout_marginBottom="10dp"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".activity.ProdukDetail"
+    tools:context="frontend.netwave.indopediaid.activity.ProdukDetail"
     tools:showIn="@layout/produk_detail">
 
         <ImageView

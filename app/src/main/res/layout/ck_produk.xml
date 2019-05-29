@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity.ck_Produk"
+    tools:context="frontend.netwave.indopediaid.activity.ck_Produk"
     android:background="@drawable/bg_kayu">
 
     <android.support.v4.widget.NestedScrollView
@@ -49,15 +49,17 @@
                     android:layout_gravity="left"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/nm_barang"/>
+                    android:text="@string/nm_barang"
+                    android:textSize="18sp"
+                    android:textColor="@color/teks" />
 
                 <TextView
                     android:layout_gravity="left"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="KanakaGear"
-                    android:textColor="@color/teks"
-                    android:textSize="12sp"/>
+                    android:textSize="12sp"
+                    android:textColor="@color/teks"/>
 
                 <LinearLayout
                     android:layout_width="160dp"
@@ -113,8 +115,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Rp 275.000"
-                    android:textColor="@color/teks"
-                    android:textSize="15sp"/>
+                    android:textSize="15sp"
+                    android:textColor="@color/teks"/>
 
             </LinearLayout>
 
@@ -165,7 +167,8 @@
                     android:layout_height="wrap_content"
                     android:text="@string/total"
                     android:layout_margin="@dimen/tulisan"
-                    android:textSize="20sp"/>
+                    android:textSize="18sp"
+                    android:textColor="@color/teks"/>
 
                 <TextView
                     android:layout_gravity="left"
@@ -173,10 +176,11 @@
                     android:layout_height="wrap_content"
                     android:text="Rp 275.000"
                     android:layout_marginStart="@dimen/tulisan"
-                    android:textColor="@color/teks"
-                    android:textSize="18sp"/>
+                    android:textSize="18sp"
+                    android:textColor="@color/teks"/>
 
                 <Button
+                    android:id="@+id/btn_beli2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/teks"

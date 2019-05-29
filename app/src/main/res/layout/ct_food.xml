@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".categories.ct_Food"
+    tools:context="frontend.netwave.indopediaid.categories.ct_Food"
     android:orientation="vertical"
     android:background="@drawable/bg_kayu">
 
@@ -75,8 +75,9 @@
                             android:gravity="center"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:text="Makanan Lainnya"/>
+                            android:text="Makanan\nLainnya"
+                            android:textColor="@color/teks"
+                            android:textSize="18sp"/>
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
 
@@ -106,8 +107,9 @@
                             android:gravity="center"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:text="Minuman\n"/>
+                            android:text="Minuman\n"
+                            android:textColor="@color/teks"
+                            android:textSize="18sp"/>
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
             </LinearLayout>
@@ -175,7 +177,7 @@
                             android:layout_marginTop="1dp"
                             android:layout_marginStart="15dp"
                             android:layout_marginEnd="15dp"
-                            android:text="TAS BODYPACK SELEMPANG AVTECH KAVALU - KANAGEAR"
+                            android:text="Nama Produk ..."
                             android:textColor="@color/teks"
                             android:ellipsize="end"
                             android:maxLines="1" />
@@ -268,7 +270,7 @@
                             android:maxLines="1"
                             android:layout_marginStart="15dp"
                             android:layout_marginEnd="15dp"
-                            android:text="TAS DAYPACK CONSINA AMUR - KANAKAGEAR"
+                            android:text="Nama Produk ..."
                             android:textColor="@color/teks" />
 
                         <TextView

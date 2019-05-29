@@ -4,7 +4,7 @@
     <color name="warnaUtamaGelap">#755B38</color>
     <color name="warnaAccent">#755B38</color>
     <color name="gelap">#b1b0b0</color>
-    <color name="teks">#755B38</color>
+    <color name="tulisan">#7e4a4a</color>
     <color name="lightgray">#ededed</color>
     <color name="coklat">#FFF8DC</color>
     <color name="background">#323232</color>
@@ -13,4 +13,5 @@
     <color name="dividerColor">#80CBC4</color>
     <color name="list_item_title">#AAAAAA</color>
     <color name="list_group_title">#808080</color>
+    <color name="teks">#503b01</color>
 </resources>

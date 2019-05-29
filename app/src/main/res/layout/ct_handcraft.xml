@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".categories.ct_Handcraft"
+    tools:context="frontend.netwave.indopediaid.categories.ct_Handcraft"
     android:orientation="vertical"
     android:background="@drawable/bg_kayu">
 
@@ -70,7 +70,9 @@
                             android:gravity="center"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Kotak\nUkiran"/>
+                            android:text="Kotak\nUkiran"
+                            android:textColor="@color/teks"
+                            android:textSize="18sp"/>
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
 
@@ -99,7 +101,9 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Souvenir\n"/>
+                            android:text="Souvenir\n"
+                            android:textColor="@color/teks"
+                            android:textSize="18sp"/>
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
 
@@ -120,7 +124,7 @@
 
                         <ImageView
                             android:id="@+id/imgv_furin"
-                            android:background="@drawable/ic_furniturINT"
+                            android:background="@drawable/ic_furnitur_int"
                             android:layout_width="64dp"
                             android:layout_height="64dp"
                             android:padding="5dp"/>
@@ -129,7 +133,9 @@
                             android:gravity="center"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Furniture\nInterior"/>
+                            android:text="Furniture\nInterior"
+                            android:textColor="@color/teks"
+                            android:textSize="18sp"/>
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
 
@@ -150,16 +156,18 @@
 
                         <ImageView
                             android:id="@+id/fureks"
-                            android:background="@drawable/ic_furniturEKS"
+                            android:background="@drawable/ic_furnitur_eks"
                             android:layout_width="64dp"
                             android:layout_height="64dp"
                             android:padding="5dp"/>
 
                         <TextView
-                            android:gravity="center"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Furniture\nEksterior"/>
+                            android:gravity="center"
+                            android:text="Furniture\nEksterior"
+                            android:textColor="@color/teks"
+                            android:textSize="18sp"/>
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
             </LinearLayout>
@@ -199,7 +207,9 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Elektronika"/>
+                            android:text="Elektronika"
+                            android:textColor="@color/teks"
+                            android:textSize="18sp"/>
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
 
@@ -228,7 +238,9 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Peralatan"/>
+                            android:text="Peralatan"
+                            android:textColor="@color/teks"
+                            android:textSize="18sp"/>
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
 
@@ -257,7 +269,9 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Patung"/>
+                            android:text="Patung"
+                            android:textColor="@color/teks"
+                            android:textSize="18sp"/>
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
             </LinearLayout>

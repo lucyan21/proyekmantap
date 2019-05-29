@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".fragment.SiCepat_ship">
+    tools:context="frontend.netwave.indopediaid.fragment.SiCepat_ship">
 
     <android.support.v4.widget.NestedScrollView
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
@@ -26,7 +26,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
-                android:text="Service :  "/>
+                android:text="Service :  "
+                android:textSize="20dp"
+                android:textColor="@color/teks"/>
 
             <RadioGroup
                 android:layout_marginStart="@dimen/tulisan"
@@ -40,6 +42,7 @@
                     android:id="@+id/radioMerah"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/teks"
                     android:text="reg" />
 
             </RadioGroup>

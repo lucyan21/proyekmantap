@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.Page_Login"
+    tools:context="frontend.netwave.indopediaid.activity.Page_Login"
     android:background="@drawable/bg_kayu"
     android:orientation="vertical">
 
@@ -39,6 +39,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textEmailAddress"
+                    android:textColor="@color/teks"
                     android:hint="Email" />
             </android.support.design.widget.TextInputLayout>
 
@@ -53,6 +54,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPassword"
+                    android:textColor="@color/teks"
                     android:hint="Password"/>
             </android.support.design.widget.TextInputLayout>
 
@@ -62,7 +64,7 @@
                 android:layout_height="wrap_content"
                 android:text="Lupa Password ?"
                 android:gravity="right"
-                android:textSize="@dimen/tulisan"
+                android:textSize="16sp"
                 android:textColor="@color/teks"/>
 
             <ProgressBar
@@ -79,7 +81,7 @@
                 android:layout_marginBottom="24dp"
                 android:background="@color/teks"
                 android:textColor="@android:color/white"
-                android:padding="12dp"
+                android:textSize="20sp"
                 android:text="Masuk"/>
 
             <TextView
@@ -87,15 +89,17 @@
                 android:layout_height="wrap_content"
                 android:text="Belum punya akun Indopedia?"
                 android:gravity="center"
-                android:textSize="16dip"/>
+                android:textSize="18sp"
+                android:textColor="@color/teks"/>
 
             <TextView
                 android:id="@+id/txtRegis"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
                 android:text="Daftar"
                 android:gravity="center"
-                android:textSize="16dip"
+                android:textSize="18sp"
                 android:textColor="@color/teks"/>
 
         </LinearLayout>

@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".tester.Test_Page"
+    tools:context="frontend.netwave.indopediaid.tester.Test_Page"
     android:background="@drawable/bg_kayu"
     android:orientation="vertical">
 

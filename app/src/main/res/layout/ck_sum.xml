@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity.ck_Sum"
+    tools:context="frontend.netwave.indopediaid.activity.ck_Sum"
     android:background="@drawable/bg_kayu">
 
     <android.support.v4.widget.NestedScrollView
@@ -40,21 +40,25 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/alamat_pengirim"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/teks"/>
 
                     <TextView
                         android:layout_marginStart="@dimen/tulisan"
                         android:layout_marginTop="5dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Nama : "/>
+                        android:text="Nama : "
+                        android:textColor="@color/teks"/>
 
                     <TextView
                         android:layout_marginStart="@dimen/tulisan"
                         android:layout_marginTop="5dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Alamat : "/>
+                        android:text="Alamat : "
+                        android:textColor="@color/teks"/>
 
                 </LinearLayout>
             </android.support.v7.widget.CardView>
@@ -63,7 +67,7 @@
                 android:id="@+id/cv_item_2"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
+                android:layout_height="100dp"
                 android:layout_margin="5dp">
 
                 <LinearLayout
@@ -76,21 +80,25 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/jasa_kirim"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/teks"/>
 
                     <TextView
                         android:layout_marginStart="@dimen/tulisan"
                         android:layout_marginTop="5dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Ekspedisi : "/>
+                        android:text="Ekspedisi : "
+                        android:textColor="@color/teks"/>
 
                     <TextView
                         android:layout_marginStart="@dimen/tulisan"
                         android:layout_marginTop="5dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Paket : "/>
+                        android:text="Paket : "
+                        android:textColor="@color/teks"/>
 
                 </LinearLayout>
             </android.support.v7.widget.CardView>
@@ -112,42 +120,50 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/info_bayar"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/teks"/>
 
                     <TextView
                         android:layout_marginStart="@dimen/tulisan"
                         android:layout_marginTop="5dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="No Invoice :"/>
+                        android:text="No Invoice :"
+                        android:textColor="@color/teks"/>
 
                     <TextView
                         android:layout_marginStart="@dimen/tulisan"
                         android:layout_marginTop="5dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Jumlah : "/>
+                        android:text="Jumlah : "
+                        android:textColor="@color/teks"/>
 
                     <TextView
                         android:layout_marginStart="@dimen/tulisan"
                         android:layout_marginTop="5dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Bayar Melalui : "/>
+                        android:text="Bayar Melalui : "
+                        android:textColor="@color/teks"/>
 
                     <TextView
                         android:layout_marginStart="@dimen/tulisan"
                         android:layout_marginTop="5dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Kode Bayar : "/>
+                        android:text="Kode Bayar : "
+                        android:textColor="@color/teks"/>
 
                     <TextView
                         android:layout_marginStart="@dimen/tulisan"
                         android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Keterangan : "/>
+                        android:text="Keterangan : "
+                        android:textColor="@color/teks"/>
 
                 </LinearLayout>
             </android.support.v7.widget.CardView>
@@ -178,6 +194,7 @@
                 android:gravity="center">
 
                 <Button
+                    android:id="@+id/btn_beli4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/teks"

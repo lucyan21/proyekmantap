@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".payment.TagihanPLN"
+    tools:context="frontend.netwave.indopediaid.payment.TagihanPLN"
     android:orientation="vertical"
     android:background="@drawable/bg_kayu">
 
@@ -19,6 +19,125 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_kategori"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_width="80dp"
+                    android:layout_height="110dp"
+                    android:layout_margin="6dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardElevation="0dp"
+                    android:layout_gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imv_kategori"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/bg_coklat"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_search" />
+
+                        <TextView
+                            android:id="@+id/tv_kategori"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/teks"
+                            android:textSize="18sp"
+                            android:text="CARI\nKATEGORI" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_diskon"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_width="80dp"
+                    android:layout_height="110dp"
+                    android:layout_margin="6dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardElevation="0dp"
+                    android:layout_gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imv_diskon"
+                            android:src="@drawable/ic_tag"
+                            android:background="@drawable/bg_merah"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:padding="5dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_diskon"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/teks"
+                            android:textSize="18sp"
+                            android:text="CARI\nDISKON"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_halal"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_width="80dp"
+                    android:layout_height="110dp"
+                    android:layout_margin="6dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardElevation="0dp"
+                    android:layout_gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imv_halal"
+                            android:src="@drawable/ic_halal"
+                            android:background="@drawable/bg_hijau"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:padding="5dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_halal"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/teks"
+                            android:textSize="18sp"
+                            android:text="CARI\nHALAL"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
 
             <!-- start menu kategori -->
             <LinearLayout
@@ -41,14 +160,6 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="left"
-                            android:layout_margin="@dimen/tulisan"
-                            android:text="Nomor Meter"
-                            android:textSize="@dimen/tulisan" />
 
                         <android.support.design.widget.TextInputLayout
                             android:layout_width="match_parent"

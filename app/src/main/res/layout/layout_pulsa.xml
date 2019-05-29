@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".payment.Pulsa"
+    tools:context="frontend.netwave.indopediaid.payment.Pulsa"
     android:background="@drawable/bg_kayu"
     android:orientation="vertical">
 
@@ -61,11 +61,12 @@
 
                             <TextView
                                 android:id="@+id/tv_kategori"
+                                android:gravity="center"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textColor="@color/teks"
-                                android:textSize="22sp"
-                                android:text="KATEGORI" />
+                                android:textSize="18sp"
+                                android:text="CARI\nKATEGORI" />
 
                         </LinearLayout>
                     </android.support.v7.widget.CardView>
@@ -98,11 +99,12 @@
 
                             <TextView
                                 android:id="@+id/tv_diskon"
+                                android:gravity="center"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textColor="@color/teks"
-                                android:textSize="22sp"
-                                android:text="DISKON"/>
+                                android:textSize="18sp"
+                                android:text="CARI\nDISKON"/>
                         </LinearLayout>
                     </android.support.v7.widget.CardView>
 
@@ -134,11 +136,12 @@
 
                             <TextView
                                 android:id="@+id/tv_halal"
+                                android:gravity="center"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textColor="@color/teks"
-                                android:textSize="22sp"
-                                android:text="HALAL"/>
+                                android:textSize="18sp"
+                                android:text="CARI\nHALAL"/>
                         </LinearLayout>
                     </android.support.v7.widget.CardView>
                  </LinearLayout>

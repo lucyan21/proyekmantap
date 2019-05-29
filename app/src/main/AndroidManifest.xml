@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.netwave.indopediaid"
+    package="frontend.netwave.indopedia"
     tools:ignore="GoogleAppIndexinGwarning">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -17,29 +17,29 @@
         android:supportsRtl="true"
         android:theme="@style/IndopediaTheme">
         <activity
-            android:name=".activity.MainActivity"
+            android:name="frontend.netwave.indopediaid.activity.MainActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.ProdukList"
+            android:name="frontend.netwave.indopediaid.activity.ProdukList"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.ProdukDetail"
+            android:name="frontend.netwave.indopediaid.activity.ProdukDetail"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".payment.Pulsa"
+            android:name="frontend.netwave.indopediaid.payment.Pulsa"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".payment.PaketData"
+            android:name="frontend.netwave.indopediaid.payment.PaketData"
             android:screenOrientation="portrait" />
-        <activity android:name=".activity.PanduanBelanja" />
-        <activity android:name=".activity.PanduanLacak" />
-        <activity android:name=".activity.PanduanPembayaran" />
-        <activity android:name=".activity.PanduanPengiriman" />
+        <activity android:name="frontend.netwave.indopediaid.activity.PanduanBelanja" />
+        <activity android:name="frontend.netwave.indopediaid.activity.PanduanLacak" />
+        <activity android:name="frontend.netwave.indopediaid.activity.PanduanPembayaran" />
+        <activity android:name="frontend.netwave.indopediaid.activity.PanduanPengiriman" />
         <activity
-            android:name=".activity.Profile"
+            android:name="frontend.netwave.indopediaid.activity.Profile"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.SplashScreen"
+            android:name="frontend.netwave.indopediaid.activity.SplashScreen"
             android:screenOrientation="portrait"
             android:theme="@style/AppFullScreenTheme">
             <intent-filter>
@@ -48,21 +48,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".payment.PulsaPLN" />
-        <activity android:name=".payment.TagihanPLN" />
-        <activity android:name=".categories.ct_Handcraft" />
-        <activity android:name=".categories.ct_Fashion" />
-        <activity android:name=".categories.ct_Healthcare" />
-        <activity android:name=".categories.ct_Food" />
-        <activity android:name=".activity.ck_Produk" />
-        <activity android:name=".activity.ck_Sum" />
-        <activity android:name=".activity.ck_Payment" />
-        <activity android:name=".activity.ck_Pengiriman" />
-        <activity android:name=".activity.Page_Login" />
-        <activity android:name=".activity.Page_Register" />
-        <activity android:name=".tester.Test_Page" />
-        <activity android:name=".activity.Bantuan" />
-        <activity android:name=".activity.About_Us"></activity>
+        <activity android:name="frontend.netwave.indopediaid.payment.PulsaPLN" />
+        <activity android:name="frontend.netwave.indopediaid.payment.TagihanPLN" />
+        <activity android:name="frontend.netwave.indopediaid.categories.ct_Handcraft" />
+        <activity android:name="frontend.netwave.indopediaid.categories.ct_Fashion" />
+        <activity android:name="frontend.netwave.indopediaid.categories.ct_Healthcare" />
+        <activity android:name="frontend.netwave.indopediaid.categories.ct_Food" />
+        <activity android:name="frontend.netwave.indopediaid.activity.ck_Produk" />
+        <activity android:name="frontend.netwave.indopediaid.activity.ck_Sum" />
+        <activity android:name="frontend.netwave.indopediaid.activity.ck_Payment" />
+        <activity android:name="frontend.netwave.indopediaid.activity.ck_Pengiriman" />
+        <activity android:name="frontend.netwave.indopediaid.activity.Page_Login" />
+        <activity android:name="frontend.netwave.indopediaid.activity.Page_Register" />
+        <activity android:name="frontend.netwave.indopediaid.tester.Test_Page" />
+        <activity android:name="frontend.netwave.indopediaid.activity.Bantuan" />
+        <activity android:name="frontend.netwave.indopediaid.activity.About_Us" />
+        <activity android:name="frontend.netwave.indopediaid.categories.ct_All"></activity>
     </application>
 
 </manifest>

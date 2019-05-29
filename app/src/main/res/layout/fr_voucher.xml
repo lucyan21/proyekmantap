@@ -38,11 +38,12 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="5dp"
                         android:text="Expired Before"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textColor="@color/teks"
+                        android:textSize="20sp"/>
 
                     <android.support.design.widget.TextInputLayout
                         android:layout_width="match_parent"
@@ -52,6 +53,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="date"
+                            android:textColor="@color/teks"
                             android:hint="01/01/1111" />
                     </android.support.design.widget.TextInputLayout>
 
@@ -87,22 +89,26 @@
                                     <TextView
                                         android:layout_width="130dp"
                                         android:layout_height="wrap_content"
-                                        android:text="Voucher No." />
+                                        android:text="Voucher No."
+                                        android:textColor="@color/teks"/>
                                     <TextView
                                         android:layout_width="100dp"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
-                                        android:text="Amount (IDR)" />
+                                        android:text="Amount (IDR)"
+                                        android:textColor="@color/teks"/>
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
-                                        android:text="Purchase Date" />
+                                        android:text="Purchase Date"
+                                        android:textColor="@color/teks"/>
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
-                                        android:text="Expired Date" />
+                                        android:text="Expired Date"
+                                        android:textColor="@color/teks"/>
                                 </TableRow>
 
                                 <TableRow
@@ -111,22 +117,26 @@
                                     <TextView
                                         android:layout_width="40dp"
                                         android:layout_height="wrap_content"
-                                        android:text="1IYE4266RCNYJ7KE" />
+                                        android:text="1IYE4266RCNYJ7KE"
+                                        android:textColor="@color/teks"/>
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
-                                        android:text="0" />
+                                        android:text="0"
+                                        android:textColor="@color/teks"/>
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
-                                        android:text="27 Desember 2018" />
+                                        android:text="27 Desember 2018"
+                                        android:textColor="@color/teks"/>
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
-                                        android:text="07 April 2019" />
+                                        android:text="07 April 2019"
+                                        android:textColor="@color/teks"/>
                                 </TableRow>
 
                                 <TableRow
@@ -135,22 +145,26 @@
                                     <TextView
                                         android:layout_width="40dp"
                                         android:layout_height="wrap_content"
-                                        android:text="1IYE4266RCNYJ7KE" />
+                                        android:text="1IYE4266RCNYJ7KE"
+                                        android:textColor="@color/teks"/>
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
-                                        android:text="0" />
+                                        android:text="0"
+                                        android:textColor="@color/teks"/>
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
-                                        android:text="27 Desember 2018" />
+                                        android:text="27 Desember 2018"
+                                        android:textColor="@color/teks"/>
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
-                                        android:text="27 Desember 2018" />
+                                        android:text="27 Desember 2018"
+                                        android:textColor="@color/teks"/>
                                 </TableRow>
                             </TableLayout>
                         </LinearLayout>

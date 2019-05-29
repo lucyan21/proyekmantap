@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.Page_Register"
+    tools:context="frontend.netwave.indopediaid.activity.Page_Register"
     android:background="@drawable/bg_kayu"
     android:orientation="vertical">
 
@@ -35,9 +35,8 @@
                 android:layout_height="wrap_content"
                 android:text="Daftar"
                 android:gravity="center"
-                android:textColor="@color/teks"
-                android:layout_marginBottom="20dp"
-                android:textSize="20dp"/>
+                android:textSize="18sp"
+                android:textColor="@color/teks"/>
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
@@ -47,6 +46,7 @@
                 <EditText android:id="@+id/txt_username"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/teks"
                     android:inputType="text"
                     android:hint="Nomor HP atau E-Mail" />
             </android.support.design.widget.TextInputLayout>
@@ -62,6 +62,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPassword"
+                    android:textColor="@color/teks"
                     android:hint="Password"/>
             </android.support.design.widget.TextInputLayout>
 
@@ -76,15 +77,31 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPassword"
-                    android:hint="Password"/>
+                    android:textColor="@color/teks"
+                    android:hint="Re - Password"/>
             </android.support.design.widget.TextInputLayout>
+
+            <!-- Signup Button -->
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="22dp"
+                android:layout_marginEnd="22dp"
+                android:background="@color/teks"
+                android:textColor="@android:color/white"
+                android:padding="12dp"
+                android:textSize="18sp"
+                android:text="Register"/>
 
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="Atau daftar dengan"
                 android:layout_marginTop="24dp"
-                android:textSize="16dip"/>
+                android:textSize="18sp"
+                android:textColor="@color/teks"/>
 
             <android.support.v7.widget.AppCompatButton
                 android:layout_gravity="center"
@@ -108,24 +125,14 @@
                 android:padding="12dp"
                 android:text="Facebook"/>
 
-            <!-- Signup Button -->
-            <android.support.v7.widget.AppCompatButton
-                android:id="@+id/btn_register"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="22dp"
-                android:layout_marginBottom="24dp"
-                android:background="@color/teks"
-                android:textColor="@android:color/white"
-                android:padding="12dp"
-                android:text="Register"/>
 
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="Sudah punya akun Indopedia?"
                 android:gravity="center"
-                android:textSize="16dip"/>
+                android:textSize="18sp"
+                android:textColor="@color/teks"/>
 
             <TextView
                 android:id="@+id/txtLogin"
@@ -134,7 +141,7 @@
                 android:layout_marginBottom="50dp"
                 android:text="Masuk"
                 android:gravity="center"
-                android:textSize="16dip"
+                android:textSize="18sp"
                 android:textColor="@color/teks"/>
 
         </LinearLayout>

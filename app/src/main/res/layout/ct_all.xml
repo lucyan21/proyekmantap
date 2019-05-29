@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="frontend.netwave.indopediaid.categories.ct_All"
+    android:orientation="vertical"
+    android:background="@drawable/bg_kayu">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1" >
+
+        <!-- frame awal linear -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- start judul kategori -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/teks"
+                    android:textSize="20sp"
+                    android:text="Kategori"/>
+
+            </LinearLayout>
+            <!-- end judul kategori -->
+
+            <!-- start menu kategori -->
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_kat_1"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_width="80dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="2dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/imgv_handcraft"
+                            android:background="@drawable/ic_handcraft"
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:padding="5dp"/>
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textColor="@color/teks"
+                            android:text="Handcraft\n"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_kat_2"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_width="80dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="2dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/imgv_fashion"
+                            android:background="@drawable/bg_coklat"
+                            android:src="@drawable/ic_fashion_new"
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:padding="5dp"/>
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textColor="@color/teks"
+                            android:text="Fashion\n"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_kat_3"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_width="80dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="2dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/imgv_healthcare"
+                            android:background="@drawable/bg_coklat"
+                            android:src="@drawable/ic_kesehatan"
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:padding="5dp"/>
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textColor="@color/teks"
+                            android:text="Health\nCare"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_kat_4"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_width="80dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="2dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/imgv_food"
+                            android:background="@drawable/bg_coklat"
+                            android:src="@drawable/food_baverege"
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:padding="5dp"/>
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="19sp"
+                            android:textColor="@color/teks"
+                            android:text="Food\nBeverage"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+            <!-- end judul kategori -->
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

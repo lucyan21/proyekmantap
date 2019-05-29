@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity.ck_Pengiriman"
+    tools:context="frontend.netwave.indopediaid.activity.ck_Pengiriman"
     android:background="@drawable/bg_kayu">
 
     <android.support.v4.widget.NestedScrollView
@@ -42,8 +42,8 @@
                         android:layout_height="wrap_content"
                         android:text="Tahap 1: Konfirmasi Barang"
                         android:textStyle="bold"
-                        android:textColor="@color/teks"
-                        android:textSize="@dimen/tulisan"/>
+                        android:textSize="18sp"
+                        android:textColor="@color/teks"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -81,6 +81,7 @@
                             android:layout_height="wrap_content"
                             android:text="@string/nm_barang"
                             android:textStyle="bold"
+                            android:textColor="@color/teks"
                             android:textSize="13sp"/>
 
                         <TextView
@@ -98,7 +99,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Total Harga Barang : "
-                            android:textSize="15sp"/>
+                            android:textSize="18sp"
+                            android:textColor="@color/teks"/>
 
                     </LinearLayout>
                 </LinearLayout>
@@ -115,8 +117,8 @@
                         android:layout_height="wrap_content"
                         android:text="Rp 825.000"
                         android:textStyle="bold"
-                        android:textColor="@color/teks"
-                        android:textSize="@dimen/tulisan"/>
+                        android:textSize="18sp"
+                        android:textColor="@color/teks" />
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
@@ -139,8 +141,8 @@
                         android:layout_height="wrap_content"
                         android:text="Tahap 2: Alamat Dituju"
                         android:textStyle="bold"
-                        android:textColor="@color/teks"
-                        android:textSize="@dimen/tulisan"/>
+                        android:textSize="18sp"
+                        android:textColor="@color/teks"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -155,7 +157,7 @@
                         android:layout_width="100dp"
                         android:layout_margin="5dp"
                         android:layout_height="wrap_content"
-                        android:background="@color/teks"
+                        android:background="@android:color/transparent"
                         android:textColorHighlight="@color/teks"
                         android:text="Rumah"/>
 
@@ -163,7 +165,7 @@
                         android:layout_width="100dp"
                         android:layout_margin="5dp"
                         android:layout_height="wrap_content"
-                        android:background="@color/teks"
+                        android:background="@android:color/transparent"
                         android:textColorHighlight="@color/teks"
                         android:text="Kantor"/>
 
@@ -171,7 +173,7 @@
                         android:layout_width="100dp"
                         android:layout_margin="5dp"
                         android:layout_height="wrap_content"
-                        android:background="@color/teks"
+                        android:background="@android:color/transparent"
                         android:textColorHighlight="@color/teks"
                         android:text="Rumah"/>
 
@@ -188,7 +190,6 @@
                 app:cardElevation="0dp">
 
                 <LinearLayout
-                    android:layout_margin="@dimen/tulisan"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -199,7 +200,8 @@
                         android:layout_marginBottom="@dimen/tulisan"
                         android:text="Rumah"
                         android:textStyle="bold"
-                        android:textSize="16sp"/>
+                        android:textSize="18sp"
+                        android:textColor="@color/teks"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -207,12 +209,14 @@
                         android:layout_marginStart="@dimen/tulisan"
                         android:layout_marginBottom="@dimen/tulisan"
                         android:text="@string/alamat_adm"
-                        android:textSize="@dimen/tulisan"/>
+                        android:textSize="16sp"
+                        android:textColor="@color/teks"/>
 
                     <Button
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="30dp"
                         android:layout_marginStart="@dimen/tulisan"
+                        android:layout_marginBottom="@dimen/tulisan"
                         android:background="@color/teks"
                         android:textColor="@color/white"
                         android:text="Cek Kurir"/>
@@ -238,8 +242,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Tahap 3: Kurir"
+                        android:textSize="18sp"
                         android:textColor="@color/teks"
-                        android:textSize="@dimen/tulisan"
                         android:textStyle="bold" />
 
                     <LinearLayout
@@ -285,37 +289,39 @@
             android:layout_height="100dp">
 
             <LinearLayout
-                android:background="@color/coklat"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center">
+                android:background="@color/coklat"
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <TextView
-                    android:layout_gravity="left"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/total_bayar"
+                    android:layout_gravity="left"
                     android:layout_marginStart="16dp"
-                    android:layout_marginTop="5dp"
-                    android:textSize="15sp"/>
+                    android:layout_marginTop="10dp"
+                    android:text="@string/total_bayar"
+                    android:textColor="@color/teks"
+                    android:textSize="18sp" />
 
                 <TextView
-                    android:layout_gravity="left"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Rp 0"
+                    android:layout_gravity="left"
                     android:layout_marginStart="@dimen/tulisan"
+                    android:text="Rp 0"
                     android:textColor="@color/teks"
-                    android:textSize="15sp"/>
+                    android:textSize="18sp" />
 
                 <Button
+                    android:id="@+id/btn_beli3"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
-                    android:background="@color/teks"
                     android:layout_margin="@dimen/tulisan"
-                    android:textColor="@android:color/white"
-                    android:text="@string/btn_bayar"/>
+                    android:background="@color/teks"
+                    android:text="@string/btn_bayar"
+                    android:textColor="@android:color/white" />
 
             </LinearLayout>
         </android.support.v7.widget.CardView>

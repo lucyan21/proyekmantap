@@ -58,6 +58,7 @@
                                 android:layout_marginStart="10dp"
                                 android:layout_marginTop="5dp"
                                 android:text="Pesanan #1006-55829-92725"
+                                android:textColor="@color/teks"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -65,6 +66,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="50dp"
                                 android:layout_marginTop="5dp"
+                                android:textColor="@color/teks"
                                 android:text="Di pesan pada 11/11/1111" />
 
                             <TextView
@@ -72,6 +74,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="50dp"
                                 android:layout_marginTop="5dp"
+                                android:textColor="@color/teks"
                                 android:text="Total" />
 
                             <TextView
@@ -79,6 +82,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="50dp"
                                 android:layout_marginTop="5dp"
+                                android:textColor="@color/teks"
                                 android:text="Rp 0,-" />
 
                             <TextView
@@ -86,6 +90,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="50dp"
                                 android:layout_marginTop="5dp"
+                                android:textColor="@color/teks"
                                 android:text="Bank Transfer" />
 
                             <TextView
@@ -93,6 +98,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="50dp"
                                 android:layout_marginTop="5dp"
+                                android:textColor="@color/teks"
                                 android:text="-" />
                         </LinearLayout>
 
@@ -116,6 +122,7 @@
                                 android:layout_marginStart="10dp"
                                 android:layout_marginTop="5dp"
                                 android:text="Pesanan #1006-55829-92725"
+                                android:textColor="@color/teks"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -123,6 +130,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="50dp"
                                 android:layout_marginTop="5dp"
+                                android:textColor="@color/teks"
                                 android:text="Di pesan pada 11/11/1111" />
 
                             <TextView
@@ -130,6 +138,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="50dp"
                                 android:layout_marginTop="5dp"
+                                android:textColor="@color/teks"
                                 android:text="Total" />
 
                             <TextView
@@ -137,6 +146,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="50dp"
                                 android:layout_marginTop="5dp"
+                                android:textColor="@color/teks"
                                 android:text="Rp 0,-" />
 
                             <TextView
@@ -144,6 +154,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="50dp"
                                 android:layout_marginTop="5dp"
+                                android:textColor="@color/teks"
                                 android:text="Bank Transfer" />
 
                             <TextView
@@ -151,6 +162,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="50dp"
                                 android:layout_marginTop="5dp"
+                                android:textColor="@color/teks"
                                 android:text="-" />
                         </LinearLayout>
 
@@ -160,18 +172,20 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
+                        android:textColor="@color/teks"
                         android:text="Items 1 to 0 off 0 total" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
                         android:gravity="center"
                         android:orientation="horizontal">
 
                         <ImageView
                             android:layout_width="30dp"
                             android:layout_height="30dp"
-                            android:background="@drawable/bg_hijau"
+                            android:background="@drawable/bg_coklat"
                             android:src="@drawable/ic_pnh_kiri"/>
 
                         <TextView
@@ -197,7 +211,7 @@
                         <ImageView
                             android:layout_width="30dp"
                             android:layout_height="30dp"
-                            android:background="@drawable/bg_hijau"
+                            android:background="@drawable/bg_coklat"
                             android:src="@drawable/ic_pnh_kanan" />
 
                     </LinearLayout>

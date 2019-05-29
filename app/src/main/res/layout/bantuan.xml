@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.Bantuan"
+    tools:context="frontend.netwave.indopediaid.activity.Bantuan"
     android:orientation="vertical"
     android:background="@drawable/bg_kayu">
 
@@ -25,7 +25,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_margin="10dp">
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
 
                 <TextView
                     android:layout_gravity="center"
@@ -68,7 +70,7 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:id="@+id/imgv_ukiran"
+                            android:id="@+id/imgv_pdnBelanja"
                             android:layout_width="64dp"
                             android:layout_height="64dp"
                             android:background="@drawable/bg_coklat"
@@ -79,6 +81,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center"
+                            android:textColor="@color/teks"
+                            android:textSize="18sp"
                             android:text="Panduan\nBelanja" />
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
@@ -99,7 +103,7 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:id="@+id/imgv_souvenir"
+                            android:id="@+id/imgv_pdnpengiriman"
                             android:layout_width="64dp"
                             android:layout_height="64dp"
                             android:background="@drawable/bg_coklat"
@@ -110,6 +114,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center"
+                            android:textColor="@color/teks"
+                            android:textSize="18sp"
                             android:text="Panduan\nPengiriman" />
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
@@ -130,7 +136,7 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:id="@+id/imgv_furin"
+                            android:id="@+id/imgv_pdnPembayaran"
                             android:layout_width="64dp"
                             android:layout_height="64dp"
                             android:background="@drawable/bg_coklat"
@@ -141,6 +147,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center"
+                            android:textColor="@color/teks"
+                            android:textSize="18sp"
                             android:text="Panduan\nPembayaran" />
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
@@ -161,7 +169,7 @@
                         android:gravity="center">
 
                         <ImageView
-                            android:id="@+id/fureks"
+                            android:id="@+id/imgv_pdnLacak"
                             android:src="@drawable/ic_lacak"
                             android:background="@drawable/bg_coklat"
                             android:layout_width="64dp"
@@ -172,6 +180,8 @@
                             android:gravity="center"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:textColor="@color/teks"
+                            android:textSize="14sp"
                             android:text="Panduan\nLacak Pengiriman"/>
                     </LinearLayout>
                 </android.support.v7.widget.CardView>

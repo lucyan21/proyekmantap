@@ -8,7 +8,7 @@
         <item name="colorAccent">@color/warnaAccent</item>
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item> <!-- Selain NoAction BAR perintah baris ini juga menghilangkan BAR -->
-        <item name="android:fontFamily">@font/opensans</item>
+        <item name="android:fontFamily">@font/opensans_bold</item>
     </style>
 
     <style name="AppFullScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">

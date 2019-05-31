@@ -32,7 +32,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/teks"
                     android:textSize="@dimen/tulisan"
-                    android:text="Handicraft"/>
+                    android:text="Kategori Handicraft"/>
 
             </LinearLayout>
             <!-- end judul kategori -->
@@ -70,7 +70,7 @@
                             android:gravity="center"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Kotak\nUkiran"
+                            android:text="KOTAK\nUKIRAN"
                             android:textColor="@color/teks"
                             android:textSize="18sp"/>
                     </LinearLayout>
@@ -101,7 +101,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Souvenir\n"
+                            android:text="SOUVENIR\n"
                             android:textColor="@color/teks"
                             android:textSize="18sp"/>
                     </LinearLayout>
@@ -133,7 +133,7 @@
                             android:gravity="center"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Furniture\nInterior"
+                            android:text="FURNITUR\nINTERIOR"
                             android:textColor="@color/teks"
                             android:textSize="18sp"/>
                     </LinearLayout>
@@ -165,7 +165,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="Furniture\nEksterior"
+                            android:text="FURNITUR\nEKSTERIOR"
                             android:textColor="@color/teks"
                             android:textSize="18sp"/>
                     </LinearLayout>
@@ -207,7 +207,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Elektronika"
+                            android:text="ELEKTRONIK"
                             android:textColor="@color/teks"
                             android:textSize="18sp"/>
                     </LinearLayout>
@@ -238,7 +238,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Peralatan"
+                            android:text="PERALATAN"
                             android:textColor="@color/teks"
                             android:textSize="18sp"/>
                     </LinearLayout>
@@ -269,13 +269,612 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Patung"
+                            android:text="PATUNG"
                             android:textColor="@color/teks"
                             android:textSize="18sp"/>
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
             </LinearLayout>
             <!-- end judul kategori -->
+
+            <!-- start judul index -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="8dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightgray"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/teks"
+                    android:textSize="@dimen/tulisan"
+                    android:text="Produk Handcraft"/>
+
+            </LinearLayout>
+            <!-- end judul index -->
+
+            <!-- start isi index -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_item_1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_width="150dp"
+                    android:layout_height="180dp"
+                    android:layout_margin="5dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:background="@drawable/bg_putih_new"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgv_Produk_1"
+                            android:src="@raw/kotak_ukiran"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:padding="1dp" />
+
+                        <TextView
+                            android:id="@+id/tv_np_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:text="Kotak Perhiasan Kayu Ukir Cantik Model Kotak"
+                            android:textColor="@color/teks"
+                            android:ellipsize="end"
+                            android:maxLines="1" />
+
+                        <TextView
+                            android:id="@+id/tv_hp_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="2dp"
+                            android:text="Rp 125,000"
+                            android:textColor="@color/teks"
+                            android:textStyle="bold"
+                            android:textSize="10sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:orientation="horizontal">
+
+                            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                                android:id="@+id/total_star_rating_1"
+                                style="@style/Widget.MaterialRatingBar.RatingBar"
+                                android:layout_marginStart="20dp"
+                                android:layout_width="53dp"
+                                android:layout_height="15dp"
+                                android:layout_gravity="left"
+                                android:isIndicator="true"
+                                android:maxHeight="20dp"
+                                android:minHeight="20dp"
+                                android:numStars="5"
+                                android:rating="3"
+                                android:stepSize="0.25"
+                                app:mrb_progressBackgroundTint="@color/gelap"
+                                app:mrb_progressTint="@color/teks"
+                                app:mrb_secondaryProgressTint="@color/teks" />
+
+                            <TextView
+                                android:id="@+id/tv_ratingProduk_1"
+                                android:gravity="center"
+                                android:layout_width="20dp"
+                                android:layout_height="15dp"
+                                android:textSize="10sp"
+                                android:text="(0)" />
+
+                            <ImageView
+                                android:layout_marginStart="30dp"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/ic_heart" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_item_2"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_width="150dp"
+                    android:layout_height="180dp"
+                    android:layout_margin="5dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:background="@drawable/bg_putih_new"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgv_Produk_2"
+                            android:src="@raw/souvenir"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:padding="1dp" />
+
+                        <TextView
+                            android:id="@+id/tv_np_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="1dp"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:text="Gelas Sloki Dove dan Bening Souvenir"
+                            android:textColor="@color/teks" />
+
+                        <TextView
+                            android:id="@+id/tv_hp_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="2dp"
+                            android:text="Rp 355,000"
+                            android:textColor="@color/teks"
+                            android:textStyle="bold"
+                            android:textSize="10sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:orientation="horizontal">
+
+                            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                                android:id="@+id/total_star_rating_2"
+                                style="@style/Widget.MaterialRatingBar.RatingBar"
+                                android:layout_marginStart="20dp"
+                                android:layout_width="53dp"
+                                android:layout_height="15dp"
+                                android:layout_gravity="left"
+                                android:isIndicator="true"
+                                android:maxHeight="20dp"
+                                android:minHeight="20dp"
+                                android:numStars="5"
+                                android:rating="3"
+                                android:stepSize="0.25"
+                                app:mrb_progressBackgroundTint="@color/gelap"
+                                app:mrb_progressTint="@color/teks"
+                                app:mrb_secondaryProgressTint="@color/teks" />
+
+                            <TextView
+                                android:id="@+id/tv_ratingProduk_2"
+                                android:gravity="center"
+                                android:layout_width="20dp"
+                                android:layout_height="15dp"
+                                android:textSize="10sp"
+                                android:text="(0)" />
+
+                            <ImageView
+                                android:layout_marginStart="30dp"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/ic_heart" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_item_5"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_width="150dp"
+                    android:layout_height="180dp"
+                    android:layout_margin="5dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:background="@drawable/bg_putih_new"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgv_Produk_5"
+                            android:src="@raw/fur_in"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:padding="1dp" />
+
+                        <TextView
+                            android:id="@+id/tv_np_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:text="INTERIOR FURNITURE RAK BUKU MAC BRAND INFORMA"
+                            android:textColor="@color/teks"
+                            android:ellipsize="end"
+                            android:maxLines="1" />
+
+                        <TextView
+                            android:id="@+id/tv_hp_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="2dp"
+                            android:text="Rp 225,000"
+                            android:textColor="@color/teks"
+                            android:textStyle="bold"
+                            android:textSize="10sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:orientation="horizontal">
+
+                            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                                android:id="@+id/total_star_rating_5"
+                                style="@style/Widget.MaterialRatingBar.RatingBar"
+                                android:layout_marginStart="20dp"
+                                android:layout_width="53dp"
+                                android:layout_height="15dp"
+                                android:layout_gravity="left"
+                                android:isIndicator="true"
+                                android:maxHeight="20dp"
+                                android:minHeight="20dp"
+                                android:numStars="5"
+                                android:rating="3"
+                                android:stepSize="0.25"
+                                app:mrb_progressBackgroundTint="@color/gelap"
+                                app:mrb_progressTint="@color/teks"
+                                app:mrb_secondaryProgressTint="@color/teks" />
+
+                            <TextView
+                                android:id="@+id/tv_ratingProduk_5"
+                                android:gravity="center"
+                                android:layout_width="20dp"
+                                android:layout_height="15dp"
+                                android:textSize="10sp"
+                                android:text="(0)" />
+
+                            <ImageView
+                                android:layout_marginStart="30dp"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/ic_heart" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_item_6"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_width="150dp"
+                    android:layout_height="180dp"
+                    android:layout_margin="5dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:background="@drawable/bg_putih_new"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgv_Produk_6"
+                            android:src="@raw/fur_eks"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:padding="1dp" />
+
+                        <TextView
+                            android:id="@+id/tv_np_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Ring Handle Tarikan Laci Pintu Furniture Minimalis"
+                            android:textColor="@color/teks" />
+
+                        <TextView
+                            android:id="@+id/tv_hp_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="2dp"
+                            android:text="Rp 225,000"
+                            android:textColor="@color/teks"
+                            android:textStyle="bold"
+                            android:textSize="10sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:orientation="horizontal">
+
+                            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                                android:id="@+id/total_star_rating_6"
+                                style="@style/Widget.MaterialRatingBar.RatingBar"
+                                android:layout_marginStart="20dp"
+                                android:layout_width="53dp"
+                                android:layout_height="15dp"
+                                android:layout_gravity="left"
+                                android:isIndicator="true"
+                                android:maxHeight="20dp"
+                                android:minHeight="20dp"
+                                android:numStars="5"
+                                android:rating="3"
+                                android:stepSize="0.25"
+                                app:mrb_progressBackgroundTint="@color/gelap"
+                                app:mrb_progressTint="@color/teks"
+                                app:mrb_secondaryProgressTint="@color/teks" />
+
+                            <TextView
+                                android:id="@+id/tv_ratingProduk_6"
+                                android:gravity="center"
+                                android:layout_width="20dp"
+                                android:layout_height="15dp"
+                                android:textSize="10sp"
+                                android:text="(0)" />
+
+                            <ImageView
+                                android:layout_marginStart="30dp"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/ic_heart" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_item_9"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_width="150dp"
+                    android:layout_height="180dp"
+                    android:layout_margin="5dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:background="@drawable/bg_putih_new"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgv_Produk_9"
+                            android:src="@raw/produk_4"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:padding="1dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_np_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Tamanara Tiara Clutches"
+                            android:textColor="@color/teks" />
+
+                        <TextView
+                            android:id="@+id/tv_hp_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="2dp"
+                            android:text="Rp 149,000"
+                            android:textColor="@color/teks"
+                            android:textStyle="bold"
+                            android:textSize="10sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:orientation="horizontal">
+
+                            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                                android:id="@+id/total_star_rating_9"
+                                style="@style/Widget.MaterialRatingBar.RatingBar"
+                                android:layout_marginStart="20dp"
+                                android:layout_width="53dp"
+                                android:layout_height="15dp"
+                                android:layout_gravity="left"
+                                android:isIndicator="true"
+                                android:maxHeight="20dp"
+                                android:minHeight="20dp"
+                                android:numStars="5"
+                                android:rating="4.5"
+                                android:stepSize="0.25"
+                                app:mrb_progressBackgroundTint="@color/gelap"
+                                app:mrb_progressTint="@color/teks"
+                                app:mrb_secondaryProgressTint="@color/teks" />
+
+                            <TextView
+                                android:id="@+id/tv_ratingProduk_9"
+                                android:gravity="center"
+                                android:layout_width="20dp"
+                                android:layout_height="15dp"
+                                android:textSize="10sp"
+                                android:text="(0)" />
+
+                            <ImageView
+                                android:layout_marginStart="30dp"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/ic_heart" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_item_10"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_width="150dp"
+                    android:layout_height="180dp"
+                    android:layout_margin="5dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:background="@drawable/bg_putih_new"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgv_Produk_10"
+                            android:src="@raw/produk_5"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:padding="1dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_np_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:text="Tamanara Roll Clutches Bag - Maroon"
+                            android:textColor="@color/teks"
+                            android:ellipsize="end"
+                            android:maxLines="1" />
+
+                        <TextView
+                            android:id="@+id/tv_hp_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="2dp"
+                            android:text="Rp 84,500"
+                            android:textColor="@color/teks"
+                            android:textStyle="bold"
+                            android:textSize="10sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:orientation="horizontal">
+
+                            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                                android:id="@+id/total_star_rating_10"
+                                style="@style/Widget.MaterialRatingBar.RatingBar"
+                                android:layout_marginStart="20dp"
+                                android:layout_width="53dp"
+                                android:layout_height="15dp"
+                                android:layout_gravity="left"
+                                android:isIndicator="true"
+                                android:maxHeight="20dp"
+                                android:minHeight="20dp"
+                                android:numStars="5"
+                                android:rating="5"
+                                android:stepSize="0.25"
+                                app:mrb_progressBackgroundTint="@color/gelap"
+                                app:mrb_progressTint="@color/teks"
+                                app:mrb_secondaryProgressTint="@color/teks" />
+
+                            <TextView
+                                android:id="@+id/tv_ratingProduk_10"
+                                android:gravity="center"
+                                android:layout_width="20dp"
+                                android:layout_height="15dp"
+                                android:textSize="10sp"
+                                android:text="(0)" />
+
+                            <ImageView
+                                android:layout_marginStart="30dp"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/ic_heart" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <!-- end isi index -->
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 </LinearLayout>

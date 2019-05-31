@@ -13,5 +13,6 @@
     <color name="dividerColor">#80CBC4</color>
     <color name="list_item_title">#AAAAAA</color>
     <color name="list_group_title">#808080</color>
-    <color name="teks">#503b01</color>
+    <color name="teks">#ad820d</color>
+    <color name="teksuda">#503b01</color>
 </resources>
